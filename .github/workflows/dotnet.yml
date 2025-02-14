@@ -20,11 +20,12 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
-    - name: Change directory
-      run: cd BerAuto_API
     - name: Restore dependencies
       run: dotnet restore
+      working-directory: BerAuto_API
     - name: Build
       run: dotnet build --no-restore
+      working-directory: BerAuto_API
     - name: Test
       run: dotnet test --no-build --verbosity normal
+      working-directory: BerAuto_API
