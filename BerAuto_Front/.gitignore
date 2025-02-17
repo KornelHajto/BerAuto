@@ -1,0 +1,39 @@
+# .NET build output
+bin/
+obj/
+
+# User-specific files for Rider
+.idea/
+
+# User-specific files for Visual Studio
+.vs/
+.vscode/
+# User-specific settings
+userprefs.json
+
+# ASP.NET temporary files
+appsettings.json
+appsettings.Development.json
+
+# ASP.NET Core logs
+logs/
+
+# Dotnet Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NPM packages
+node_modules/
+
+# .NET tool folders
+.nuget/
+
+# Rider's web debugger folder
+.idea/.idea_web/
+
+# macOS-specific files
+.DS_Store
+
+# Windows Installer files
+Thumbs.db
