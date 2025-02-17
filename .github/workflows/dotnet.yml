@@ -16,16 +16,37 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
-    - name: Restore dependencies
+
+    # Restore dependencies for both projects
+    - name: Restore dependencies for API
       run: dotnet restore
       working-directory: BerAuto_API
-    - name: Build
+    
+    - name: Restore dependencies for Frontend
+      run: dotnet restore
+      working-directory: BerAuto_Front
+
+    # Build both projects
+    - name: Build API
       run: dotnet build --no-restore
       working-directory: BerAuto_API
-    - name: Test
+    
+    - name: Build Frontend
+      run: dotnet build --no-restore
+      working-directory: BerAuto_Front
+
+    # Run tests for API (assuming frontend doesn't have tests)
+    - name: Test API
       run: dotnet test --no-build --verbosity normal
       working-directory: BerAuto_API
+
+    # Optional: Publish the Blazor WebAssembly app
+    - name: Publish Frontend
+      run: dotnet publish -c Release -o release
+      working-directory: BerAuto_Front
+
