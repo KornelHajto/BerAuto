@@ -60,7 +60,3 @@ jobs:
       run: dotnet test --no-build --verbosity normal
       working-directory: BerAuto_API
 
-    - name: Publish Frontend
-      run: dotnet publish -c Release -o release
-      working-directory: BerAuto_Front
-
