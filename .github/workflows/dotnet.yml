@@ -16,8 +16,8 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 9.0.x  # Update to .NET 9 if needed
-
+        dotnet-version: 9.0.x
+        
     # Cache NuGet packages to speed up restore
     - name: Cache NuGet packages
       uses: actions/cache@v3
@@ -31,7 +31,6 @@ jobs:
     - name: Restore dependencies for Solution
       run: dotnet restore BerAuto.sln
 
-    # Cache .NET build artifacts
     - name: Cache .NET build artifacts
       uses: actions/cache@v3
       with:
