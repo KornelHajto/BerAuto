@@ -2,13 +2,12 @@ name: .NET
 
 on:
   push:
-    branches: "**" 
+    branches: ["**"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -17,8 +16,8 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 8.0.x
-
+        dotnet-version: 9.0.x
+        
     # Cache NuGet packages to speed up restore
     - name: Cache NuGet packages
       uses: actions/cache@v3
@@ -28,35 +27,24 @@ jobs:
         restore-keys: |
           nuget-${{ runner.os }}-
 
-    - name: Restore dependencies for API
-      run: dotnet restore
-      working-directory: BerAuto_API
-    
-    - name: Restore dependencies for Frontend
-      run: dotnet restore
-      working-directory: BerAuto_Front
+    # Restore dependencies for the entire solution
+    - name: Restore dependencies for Solution
+      run: dotnet restore BerAuto.sln
 
     - name: Cache .NET build artifacts
       uses: actions/cache@v3
       with:
         path: |
-          BerAuto_API/bin
-          BerAuto_API/obj
-          BerAuto_Front/bin
-          BerAuto_Front/obj
+          **/bin
+          **/obj
         key: dotnet-build-${{ runner.os }}-${{ github.sha }}
         restore-keys: |
           dotnet-build-${{ runner.os }}-
 
-    - name: Build API
-      run: dotnet build --no-restore
-      working-directory: BerAuto_API
-    
-    - name: Build Frontend
-      run: dotnet build --no-restore
-      working-directory: BerAuto_Front
+    # Build all projects in the solution
+    - name: Build Solution
+      run: dotnet build --no-restore BerAuto.sln
 
-    - name: Test API
-      run: dotnet test --no-build --verbosity normal
-      working-directory: BerAuto_API
-
+    # Test all projects in the solution
+    - name: Test Solution
+      run: dotnet test --no-build --verbosity normal BerAuto.sln
