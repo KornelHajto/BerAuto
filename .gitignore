@@ -1,0 +1,65 @@
+# .NET build directories
+bin/
+obj/
+
+# Rider-specific files
+.idea/
+
+# User-specific files for Rider and Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# JetBrains Rider-specific files
+.idea/
+
+# User-specific files for Visual Studio
+.vs2019/
+.vs2017/
+
+# Windows Installer files
+Thumbs.db
+ehthumbs.db
+
+# macOS Finder-specific files
+.DS_Store
+
+# Linux-specific files
+*~
+
+# JetBrains Rider
+.idea/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# NPM packages
+node_modules/
+
+# ASP.NET Core HTTPS certificate
+https://github.com/dotnet/aspnetcore/issues/30767
+*.pfx
+*.key
+
+# Windows Installer files
+Thumbs.db
+ehthumbs.db
+
+# Tye (https://github.com/dotnet/tye)
+.tye/
+
+# JetBrains Rider files
+.idea/
+
+# User-specific JetBrains Rider settings
+.idea/.idea
+
+# .NET Core Visual Studio Debugger file
+.vscode/
+
+# Build results for .NET Core SDK
+project.lock.json
+project.fragment.lock.json
