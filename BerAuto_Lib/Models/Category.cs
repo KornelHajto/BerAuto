@@ -1,13 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BerAuto.Models
 {
+	[Table("Categories")]
     public class Category
     {
-		public int ID { get; set; }
+		[Key, Required]
+		public string ID { get; set; }
+		[Required]
+		public string Name { get; set; }
+		[Required]
+		public int DailyRate { get; set; }
+
+		public override string ToString()
+		{
+			return $"CategoryID:{ID}, Name: {Name}, DailyRate: {DailyRate} Ft";
+		}
 	}
 }
