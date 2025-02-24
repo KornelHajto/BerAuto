@@ -1,0 +1,20 @@
+services:
+  berauto_api:
+    image: ${DOCKER_REGISTRY-}berautoapi
+    build:
+      context: .
+      dockerfile: BerAuto_API/Dockerfile
+    ports:
+        - "5000:5000"
+        - "5001:5001"
+  berauto.database:
+    image: mcr.microsoft.com/mssql/server  
+    container_name: berauto.database
+    environment:
+    - MSSQL_SA_PASSWORD=P@ssw0rd
+    - ACCEPT_EULA=Y
+    - MSSQL_DB=BerAutoDB
+    volumes:
+    - ./BerAuto_API/Database:/var/opt/mssql/data
+    ports:
+    - 1433:1433

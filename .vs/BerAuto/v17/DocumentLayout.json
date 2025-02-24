@@ -1,7 +1,48 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\ADATOK\\ProgProjects\\BerAuto\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\lxndr\\documents\\_code\\berauto\\berauto_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\lxndr\\documents\\_code\\berauto\\berauto_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|c:\\users\\lxndr\\documents\\_code\\berauto\\docker-compose.override.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.override.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\lxndr\\documents\\_code\\berauto\\berauto_api\\lib\\database\\api_dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\lib\\database\\api_dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\lxndr\\documents\\_code\\berauto\\berauto_api\\lib\\migration\\migrationextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\lib\\migration\\migrationextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\lxndr\\documents\\_code\\berauto\\berauto_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|c:\\users\\lxndr\\documents\\_code\\berauto\\docker-compose.dcproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.dcproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\lxndr\\documents\\_code\\berauto\\berauto_api\\berauto_api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\berauto_api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\lxndr\\documents\\_code\\berauto\\berauto_api\\berauto_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\berauto_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|c:\\users\\lxndr\\documents\\_code\\berauto\\.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +50,129 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "API_DbContext.cs",
+              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\Lib\\Database\\API_DbContext.cs",
+              "RelativeDocumentMoniker": "BerAuto_API\\Lib\\Database\\API_DbContext.cs",
+              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\Lib\\Database\\API_DbContext.cs",
+              "RelativeToolTip": "BerAuto_API\\Lib\\Database\\API_DbContext.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T12:24:36.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MigrationExtension.cs",
+              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\Lib\\Migration\\MigrationExtension.cs",
+              "RelativeDocumentMoniker": "BerAuto_API\\Lib\\Migration\\MigrationExtension.cs",
+              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\Lib\\Migration\\MigrationExtension.cs",
+              "RelativeToolTip": "BerAuto_API\\Lib\\Migration\\MigrationExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T12:24:23.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\Program.cs",
+              "RelativeDocumentMoniker": "BerAuto_API\\Program.cs",
+              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\Program.cs",
+              "RelativeToolTip": "BerAuto_API\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T11:41:32.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\appsettings.json",
+              "RelativeDocumentMoniker": "BerAuto_API\\appsettings.json",
+              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\appsettings.json",
+              "RelativeToolTip": "BerAuto_API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-24T11:51:07.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "docker-compose.override.yml",
+              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\docker-compose.override.yml",
+              "RelativeDocumentMoniker": "docker-compose.override.yml",
+              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\docker-compose.override.yml",
+              "RelativeToolTip": "docker-compose.override.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-02-24T11:45:46.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\Dockerfile",
+              "RelativeDocumentMoniker": "BerAuto_API\\Dockerfile",
+              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\Dockerfile",
+              "RelativeToolTip": "BerAuto_API\\Dockerfile",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-24T11:54:21.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": ".dockerignore",
+              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\.dockerignore",
+              "RelativeDocumentMoniker": ".dockerignore",
+              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\.dockerignore",
+              "RelativeToolTip": ".dockerignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-24T11:35:04.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BerAuto_API.http",
+              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\BerAuto_API.http",
+              "RelativeDocumentMoniker": "BerAuto_API\\BerAuto_API.http",
+              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\BerAuto_API.http",
+              "RelativeToolTip": "BerAuto_API\\BerAuto_API.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-02-24T11:35:06.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "docker-compose.dcproj",
+              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\docker-compose.dcproj",
+              "RelativeDocumentMoniker": "docker-compose.dcproj",
+              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\docker-compose.dcproj",
+              "RelativeToolTip": "docker-compose.dcproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-24T11:54:07.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BerAuto_API.csproj",
+              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
+              "RelativeDocumentMoniker": "BerAuto_API\\BerAuto_API.csproj",
+              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
+              "RelativeToolTip": "BerAuto_API\\BerAuto_API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-24T11:39:06.325Z"
             }
           ]
         }
