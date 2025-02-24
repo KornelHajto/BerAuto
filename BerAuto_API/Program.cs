@@ -3,9 +3,11 @@ using BerAuto_API.Lib.Migration;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
 // Add services to the container.
 
 builder.Services.AddControllers();
+
 
 builder.Services.AddDbContext<API_DbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Database")));
