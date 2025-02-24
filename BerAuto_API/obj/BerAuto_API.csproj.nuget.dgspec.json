@@ -1,33 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "/home/alexanderh/RiderProjects/BerAuto/BerAuto_API/BerAuto_API.csproj": {}
+    "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\BerAuto_API.csproj": {}
   },
   "projects": {
-    "/home/alexanderh/RiderProjects/BerAuto/BerAuto_API/BerAuto_API.csproj": {
+    "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\BerAuto_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/alexanderh/RiderProjects/BerAuto/BerAuto_API/BerAuto_API.csproj",
+        "projectUniqueName": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
         "projectName": "BerAuto_API",
-        "projectPath": "/home/alexanderh/RiderProjects/BerAuto/BerAuto_API/BerAuto_API.csproj",
-        "packagesPath": "/home/alexanderh/.nuget/packages/",
-        "outputPath": "/home/alexanderh/RiderProjects/BerAuto/BerAuto_API/obj/",
+        "projectPath": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
+        "packagesPath": "C:\\Users\\bojsz\\.nuget\\packages\\",
+        "outputPath": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/alexanderh/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\bojsz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/home/alexanderh/RiderProjects/BerAuto/BerAuto_Lib/BerAuto_Lib.csproj": {
-                "projectPath": "/home/alexanderh/RiderProjects/BerAuto/BerAuto_Lib/BerAuto_Lib.csproj"
+              "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj": {
+                "projectPath": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj"
               }
             }
           }
@@ -42,13 +49,33 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.2, )"
             }
@@ -64,12 +91,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.2, 9.0.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -78,26 +99,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/alexanderh/RiderProjects/BerAuto/BerAuto_Lib/BerAuto_Lib.csproj": {
+    "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/alexanderh/RiderProjects/BerAuto/BerAuto_Lib/BerAuto_Lib.csproj",
+        "projectUniqueName": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj",
         "projectName": "BerAuto_Lib",
-        "projectPath": "/home/alexanderh/RiderProjects/BerAuto/BerAuto_Lib/BerAuto_Lib.csproj",
-        "packagesPath": "/home/alexanderh/.nuget/packages/",
-        "outputPath": "/home/alexanderh/RiderProjects/BerAuto/BerAuto_Lib/obj/",
+        "projectPath": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj",
+        "packagesPath": "C:\\Users\\bojsz\\.nuget\\packages\\",
+        "outputPath": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/alexanderh/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\bojsz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -116,7 +144,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -132,18 +160,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.2, 9.0.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

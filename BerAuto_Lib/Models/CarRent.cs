@@ -3,7 +3,7 @@
 namespace BerAuto.Models
 {
     [Table("CarRents")]
-    public class CarRents
+    public class CarRent
     {
         [Key, Required]
         public string ID { get; set; }

@@ -16,9 +16,10 @@ namespace BerAuto.Models
 		public int Odometer { get; set; } = 0; //kilóméteróra
 		[Required]
 		public bool Available { get; set; } = true; //kölcsönözhetőség
-		public int? CategoryId { get; set; } //kategória
+		public string? CategoryId { get; set; } //kategória
 		public Category? Category { get; set; }
 		public string Description { get; set; }
+		public ICollection<CarRent> CarRents { get; set; }
 
 		public override string ToString()
 		{

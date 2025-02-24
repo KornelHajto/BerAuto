@@ -43,7 +43,7 @@ jobs:
 
     # Build all projects in the solution
     - name: Build Solution
-      run: dotnet build --no-restore BerAuto.sln
+      run: dotnet build 
 
     # Test all projects in the solution
     - name: Test Solution
