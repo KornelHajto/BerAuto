@@ -11,6 +11,7 @@ namespace BerAuto.Models
 		public string Name { get; set; }
 		[Required]
 		public int DailyRate { get; set; }
+		public ICollection<Car> Cars { get; set; }
 
 		public override string ToString()
 		{

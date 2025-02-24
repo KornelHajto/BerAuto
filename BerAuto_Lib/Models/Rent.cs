@@ -8,7 +8,7 @@ namespace BerAuto.Models
         [Key, Required]
         public string ID { get; set; }
         [Required]
-        public string UserID { get; set; }
+        public string RenterID { get; set; }
         public User Renter { get; set; }
         [Required]
         public ERentStatus Status { get; set; }

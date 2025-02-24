@@ -19,6 +19,7 @@ namespace BerAuto.Models
 		public string? Password { get; set; }
 		public bool Enabled { get; set; }
 		public string Description { get; set; }
+		public ICollection<Rent> Rents { get; set; }
 
 		public override string ToString()
 		{
