@@ -18,3 +18,9 @@ services:
     - ./BerAuto_API/Database:/var/opt/mssql/data
     ports:
     - 1433:1433
+
+  berauto.cache:
+    image: redis:latest
+    restart: always
+    ports:
+    - '6379:6379' 

@@ -9,6 +9,9 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<API_DbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Database")));
 
+builder.Services.AddStackExchangeRedisCache(options => 
+    options.Configuration = builder.Configuration.GetConnectionString("Cache"));
+
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddSwaggerGen();
 
