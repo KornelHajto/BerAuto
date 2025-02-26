@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\BerAuto_API.csproj": {}
+    "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\BerAuto_API.csproj": {}
   },
   "projects": {
-    "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\BerAuto_API.csproj": {
+    "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\BerAuto_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
+        "projectUniqueName": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
         "projectName": "BerAuto_API",
-        "projectPath": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
-        "packagesPath": "C:\\Users\\bojsz\\.nuget\\packages\\",
-        "outputPath": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\obj\\",
+        "projectPath": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
+        "packagesPath": "C:\\Users\\lxndr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\bojsz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lxndr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,8 +33,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj": {
-                "projectPath": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj"
+              "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj": {
+                "projectPath": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj"
               }
             }
           }
@@ -63,6 +63,10 @@
               "target": "Package",
               "version": "[9.0.2, )"
             },
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -78,6 +82,22 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.2, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.21.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[7.2.0, )"
             }
           },
           "imports": [
@@ -103,20 +123,20 @@
         }
       }
     },
-    "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj": {
+    "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj",
+        "projectUniqueName": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj",
         "projectName": "BerAuto_Lib",
-        "projectPath": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj",
-        "packagesPath": "C:\\Users\\bojsz\\.nuget\\packages\\",
-        "outputPath": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\obj\\",
+        "projectPath": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj",
+        "packagesPath": "C:\\Users\\lxndr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_Lib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\bojsz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lxndr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -149,6 +169,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

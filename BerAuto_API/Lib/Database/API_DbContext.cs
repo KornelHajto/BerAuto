@@ -2,17 +2,23 @@
 {
 	public class API_DbContext : DbContext
 	{
-		public DbSet<Car> Cars { get; set; }
+        public API_DbContext(DbContextOptions<API_DbContext> options)
+        : base(options)
+        {
+        }
+
+        public DbSet<Car> Cars { get; set; }
 		public DbSet<CarRent> CarRents { get; set; }
 		public DbSet<Category> Categories { get; set; }
 		public DbSet<Log> Logs { get; set; }
 		public DbSet<Rent> Rents { get; set; }
 		public DbSet<User> Users { get; set; }
 
-		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+		/*protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
 			optionsBuilder.UseSqlServer(@"Server=DESKTOP-HD8T179\SQLEXPRESS;Database=BerAutoDb;Trusted_Connection=true;TrustServerCertificate=true;");
 		}
+		*/
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
