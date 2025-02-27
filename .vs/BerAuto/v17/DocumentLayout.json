@@ -3,52 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\lxndr\\documents\\_code\\berauto\\berauto_api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F3BBD10-5CD6-4F8A-AE36-796BEA7E3055}|BerAuto_WEB\\BerAuto_WEB.csproj|c:\\users\\lxndr\\documents\\_code\\berauto\\berauto_web\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F3BBD10-5CD6-4F8A-AE36-796BEA7E3055}|BerAuto_WEB\\BerAuto_WEB.csproj|solutionrelative:berauto_web\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\lxndr\\documents\\_code\\berauto\\berauto_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F3BBD10-5CD6-4F8A-AE36-796BEA7E3055}|BerAuto_WEB\\BerAuto_WEB.csproj|c:\\users\\lxndr\\documents\\_code\\berauto\\berauto_web\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F3BBD10-5CD6-4F8A-AE36-796BEA7E3055}|BerAuto_WEB\\BerAuto_WEB.csproj|solutionrelative:berauto_web\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\lxndr\\documents\\_code\\berauto\\berauto_api\\lib\\database\\api_dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\lib\\database\\api_dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F3BBD10-5CD6-4F8A-AE36-796BEA7E3055}|BerAuto_WEB\\BerAuto_WEB.csproj|c:\\users\\lxndr\\documents\\_code\\berauto\\berauto_web\\layout\\loginlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F3BBD10-5CD6-4F8A-AE36-796BEA7E3055}|BerAuto_WEB\\BerAuto_WEB.csproj|solutionrelative:berauto_web\\layout\\loginlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\lxndr\\documents\\_code\\berauto\\berauto_api\\lib\\migration\\migrationextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\lib\\migration\\migrationextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F3BBD10-5CD6-4F8A-AE36-796BEA7E3055}|BerAuto_WEB\\BerAuto_WEB.csproj|c:\\users\\lxndr\\documents\\_code\\berauto\\berauto_web\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F3BBD10-5CD6-4F8A-AE36-796BEA7E3055}|BerAuto_WEB\\BerAuto_WEB.csproj|solutionrelative:berauto_web\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\lxndr\\documents\\_code\\berauto\\berauto_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{5F3BBD10-5CD6-4F8A-AE36-796BEA7E3055}|BerAuto_WEB\\BerAuto_WEB.csproj|c:\\users\\lxndr\\documents\\_code\\berauto\\berauto_web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F3BBD10-5CD6-4F8A-AE36-796BEA7E3055}|BerAuto_WEB\\BerAuto_WEB.csproj|solutionrelative:berauto_web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|c:\\users\\lxndr\\documents\\_code\\berauto\\docker-compose.override.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.override.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{5F3BBD10-5CD6-4F8A-AE36-796BEA7E3055}|BerAuto_WEB\\BerAuto_WEB.csproj|c:\\users\\lxndr\\documents\\_code\\berauto\\berauto_web\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F3BBD10-5CD6-4F8A-AE36-796BEA7E3055}|BerAuto_WEB\\BerAuto_WEB.csproj|solutionrelative:berauto_web\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\lxndr\\documents\\_code\\berauto\\berauto_api\\berauto_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\berauto_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{5F3BBD10-5CD6-4F8A-AE36-796BEA7E3055}|BerAuto_WEB\\BerAuto_WEB.csproj|c:\\users\\lxndr\\documents\\_code\\berauto\\berauto_web\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F3BBD10-5CD6-4F8A-AE36-796BEA7E3055}|BerAuto_WEB\\BerAuto_WEB.csproj|solutionrelative:berauto_web\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\lxndr\\documents\\_code\\berauto\\berauto_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{5F3BBD10-5CD6-4F8A-AE36-796BEA7E3055}|BerAuto_WEB\\BerAuto_WEB.csproj|c:\\users\\lxndr\\documents\\_code\\berauto\\berauto_web\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F3BBD10-5CD6-4F8A-AE36-796BEA7E3055}|BerAuto_WEB\\BerAuto_WEB.csproj|solutionrelative:berauto_web\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|c:\\users\\lxndr\\documents\\_code\\berauto\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|c:\\users\\lxndr\\documents\\_code\\berauto\\docker-compose.dcproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.dcproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\lxndr\\documents\\_code\\berauto\\berauto_api\\berauto_api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\berauto_api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|c:\\users\\lxndr\\documents\\_code\\berauto\\.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{5F3BBD10-5CD6-4F8A-AE36-796BEA7E3055}|BerAuto_WEB\\BerAuto_WEB.csproj|c:\\users\\lxndr\\documents\\_code\\berauto\\berauto_web\\berauto_web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5F3BBD10-5CD6-4F8A-AE36-796BEA7E3055}|BerAuto_WEB\\BerAuto_WEB.csproj|solutionrelative:berauto_web\\berauto_web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,162 +46,116 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\Program.cs",
-              "RelativeDocumentMoniker": "BerAuto_API\\Program.cs",
-              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\Program.cs",
-              "RelativeToolTip": "BerAuto_API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T11:41:32.043Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "BerAuto_API\\Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "BerAuto_API\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAcwDQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T15:51:52.264Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MigrationExtension.cs",
-              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\Lib\\Migration\\MigrationExtension.cs",
-              "RelativeDocumentMoniker": "BerAuto_API\\Lib\\Migration\\MigrationExtension.cs",
-              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\Lib\\Migration\\MigrationExtension.cs",
-              "RelativeToolTip": "BerAuto_API\\Lib\\Migration\\MigrationExtension.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T12:24:23.196Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\appsettings.json",
-              "RelativeDocumentMoniker": "BerAuto_API\\appsettings.json",
-              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\appsettings.json",
-              "RelativeToolTip": "BerAuto_API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-24T11:51:07.565Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "docker-compose.override.yml",
-              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\docker-compose.override.yml",
-              "RelativeDocumentMoniker": "docker-compose.override.yml",
-              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\docker-compose.override.yml",
-              "RelativeToolTip": "docker-compose.override.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-02-24T11:45:46.093Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\Dockerfile",
-              "RelativeDocumentMoniker": "BerAuto_API\\Dockerfile",
-              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\Dockerfile",
-              "RelativeToolTip": "BerAuto_API\\Dockerfile",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-24T11:54:21.275Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BerAuto_API.csproj",
-              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
-              "RelativeDocumentMoniker": "BerAuto_API\\BerAuto_API.csproj",
-              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
-              "RelativeToolTip": "BerAuto_API\\BerAuto_API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-24T11:39:06.325Z",
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "BerAuto_WEB\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "BerAuto_WEB\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T10:55:16.783Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "API_DbContext.cs",
-              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\Lib\\Database\\API_DbContext.cs",
-              "RelativeDocumentMoniker": "BerAuto_API\\Lib\\Database\\API_DbContext.cs",
-              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\Lib\\Database\\API_DbContext.cs",
-              "RelativeToolTip": "BerAuto_API\\Lib\\Database\\API_DbContext.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAqwCsAAAADAAAAAAAAAA==",
+              "Title": "LoginLayout.razor",
+              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Layout\\LoginLayout.razor",
+              "RelativeDocumentMoniker": "BerAuto_WEB\\Layout\\LoginLayout.razor",
+              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Layout\\LoginLayout.razor",
+              "RelativeToolTip": "BerAuto_WEB\\Layout\\LoginLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T10:31:43.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "BerAuto_WEB\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Pages\\Home.razor",
+              "RelativeToolTip": "BerAuto_WEB\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T10:56:38.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "BerAuto_WEB\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\wwwroot\\index.html",
+              "RelativeToolTip": "BerAuto_WEB\\wwwroot\\index.html",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB0AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-02-27T10:55:34.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Program.cs",
+              "RelativeDocumentMoniker": "BerAuto_WEB\\Program.cs",
+              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Program.cs",
+              "RelativeToolTip": "BerAuto_WEB\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T12:24:36.891Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T10:56:23.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\App.razor",
+              "RelativeDocumentMoniker": "BerAuto_WEB\\App.razor",
+              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\App.razor",
+              "RelativeToolTip": "BerAuto_WEB\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T10:52:43.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\_Imports.razor",
+              "RelativeDocumentMoniker": "BerAuto_WEB\\_Imports.razor",
+              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\_Imports.razor",
+              "RelativeToolTip": "BerAuto_WEB\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T10:52:29.45Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "docker-compose.yml",
-              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\docker-compose.yml",
-              "RelativeDocumentMoniker": "docker-compose.yml",
-              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\docker-compose.yml",
-              "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAswAEAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-02-24T12:42:01.56Z",
-              "EditorCaption": ""
+              "Title": "BerAuto_WEB.csproj",
+              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\BerAuto_WEB.csproj",
+              "RelativeDocumentMoniker": "BerAuto_WEB\\BerAuto_WEB.csproj",
+              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\BerAuto_WEB.csproj",
+              "RelativeToolTip": "BerAuto_WEB\\BerAuto_WEB.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-27T10:52:07.323Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": ".dockerignore",
-              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\.dockerignore",
-              "RelativeDocumentMoniker": ".dockerignore",
-              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\.dockerignore",
-              "RelativeToolTip": ".dockerignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-24T11:35:04.896Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "docker-compose.dcproj",
-              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\docker-compose.dcproj",
-              "RelativeDocumentMoniker": "docker-compose.dcproj",
-              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\docker-compose.dcproj",
-              "RelativeToolTip": "docker-compose.dcproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-24T11:54:07.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "BerAuto_API.http",
-              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\BerAuto_API.http",
-              "RelativeDocumentMoniker": "BerAuto_API\\BerAuto_API.http",
-              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\BerAuto_API.http",
-              "RelativeToolTip": "BerAuto_API\\BerAuto_API.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-02-24T11:35:06.759Z",
+              "DocumentIndex": 0,
+              "Title": "Login.razor",
+              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "BerAuto_WEB\\Pages\\Login.razor",
+              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Pages\\Login.razor",
+              "RelativeToolTip": "BerAuto_WEB\\Pages\\Login.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T10:32:56.593Z",
               "EditorCaption": ""
             }
           ]
