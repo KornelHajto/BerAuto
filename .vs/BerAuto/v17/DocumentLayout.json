@@ -46,45 +46,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainLayout.razor",
-              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Layout\\MainLayout.razor",
-              "RelativeDocumentMoniker": "BerAuto_WEB\\Layout\\MainLayout.razor",
-              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Layout\\MainLayout.razor",
-              "RelativeToolTip": "BerAuto_WEB\\Layout\\MainLayout.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T10:55:16.783Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginLayout.razor",
-              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Layout\\LoginLayout.razor",
-              "RelativeDocumentMoniker": "BerAuto_WEB\\Layout\\LoginLayout.razor",
-              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Layout\\LoginLayout.razor",
-              "RelativeToolTip": "BerAuto_WEB\\Layout\\LoginLayout.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T10:31:43.601Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "BerAuto_WEB\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Pages\\Home.razor",
-              "RelativeToolTip": "BerAuto_WEB\\Pages\\Home.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T10:56:38.666Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 6,
@@ -108,6 +71,31 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-27T10:56:23.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.razor",
+              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "BerAuto_WEB\\Pages\\Login.razor",
+              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Pages\\Login.razor",
+              "RelativeToolTip": "BerAuto_WEB\\Pages\\Login.razor",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T10:32:56.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "BerAuto_WEB\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Pages\\Home.razor",
+              "RelativeToolTip": "BerAuto_WEB\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T10:56:38.666Z"
             },
             {
               "$type": "Document",
@@ -147,16 +135,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.razor",
-              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Pages\\Login.razor",
-              "RelativeDocumentMoniker": "BerAuto_WEB\\Pages\\Login.razor",
-              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Pages\\Login.razor",
-              "RelativeToolTip": "BerAuto_WEB\\Pages\\Login.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "LoginLayout.razor",
+              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Layout\\LoginLayout.razor",
+              "RelativeDocumentMoniker": "BerAuto_WEB\\Layout\\LoginLayout.razor",
+              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Layout\\LoginLayout.razor",
+              "RelativeToolTip": "BerAuto_WEB\\Layout\\LoginLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-27T10:32:56.593Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T10:31:43.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "BerAuto_WEB\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_WEB\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "BerAuto_WEB\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-27T10:55:16.783Z"
             }
           ]
         }
