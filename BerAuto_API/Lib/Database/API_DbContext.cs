@@ -14,12 +14,6 @@
 		public DbSet<Rent> Rents { get; set; }
 		public DbSet<User> Users { get; set; }
 
-		/*protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-		{
-			optionsBuilder.UseSqlServer(@"Server=DESKTOP-HD8T179\SQLEXPRESS;Database=BerAutoDb;Trusted_Connection=true;TrustServerCertificate=true;");
-		}
-		*/
-
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			modelBuilder.Entity<Category>().HasKey(x => x.ID);
