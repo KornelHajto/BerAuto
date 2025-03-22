@@ -5,13 +5,11 @@ namespace BerAuto.Models
     [Table("CarRents")]
     public class CarRent
     {
-        [Key, Required]
-        public string ID { get; set; }
-        [Required]
-        public string RentID { get; set; }
+        [Key]
+        public required string ID { get; set; }
+        public required string RentID { get; set; }
         public Rent? Rent { get; set; }
-        [Required]
-        public string CarID { get; set; }
+        public required string CarID { get; set; }
         public Car? Car { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }

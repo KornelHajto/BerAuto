@@ -5,21 +5,18 @@ namespace BerAuto.Models
     [Table("Users")]
     public class User
     {
-        [Key, Required]
-        public string ID { get; set; }
-        [Required]
-        public string Name { get; set; }
-		[Required, EmailAddress]
-		public string Email { get; set; }
-		[Required]
-		public string Address { get; set; }
-		[Required]
-		public string PhoneNumber { get; set; }
+        [Key]
+        public required string ID { get; set; }
+        public required string Name { get; set; }
+		[EmailAddress]
+		public required string Email { get; set; }
+		public required string Address { get; set; }
+		public required string PhoneNumber { get; set; }
         public EUserType AccesLevel { get; set; } = EUserType.User;
 		public string? Password { get; set; }
 		public bool Enabled { get; set; }
-		public string Description { get; set; }
-		public ICollection<Rent> Rents { get; set; }
+		public string? Description { get; set; }
+		public ICollection<Rent>? Rents { get; set; }
 
 		public override string ToString()
 		{
