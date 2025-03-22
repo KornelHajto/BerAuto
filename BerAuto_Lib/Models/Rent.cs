@@ -5,11 +5,13 @@ namespace BerAuto.Models
     [Table("Rents")]
     public class Rent
     {
-        [Key]
+        [Key, Required]
         public required string ID { get; set; }
-        public required string RenterID { get; set; }
+		[Required]
+		public required string RenterID { get; set; }
         public User? Renter { get; set; }
-        public required ERentStatus Status { get; set; }
+		[Required]
+		public required ERentStatus Status { get; set; }
         public DateTime ApplicationTime { get; set; } = DateTime.Now;
         public int Owed { get; set; } // fizetendő
 

@@ -6,11 +6,15 @@ namespace BerAuto.Models
 	[Table("Cars")]
 	public class Car
 	{
-		[Key]
+		[Key, Required]
 		public required string ID { get; set; }
+		[Required]
 		public required string PlateNumber { get; set; } //rendszám
+		[Required]
 		public required string Type { get; set; } //márka + modell
+		[Required]
 		public required int Odometer { get; set; } = 0; //kilóméteróra
+		[Required]
 		public required bool Available { get; set; } = true; //kölcsönözhetőség
 		public string? CategoryId { get; set; } //kategória
 		public Category? Category { get; set; }
