@@ -6,15 +6,15 @@ namespace BerAuto.Models
     public class Log
     {
 		[Key, Required]
-		public required int ID { get; set; }
+		public  Guid ID { get; set; } = Guid.NewGuid();
 		[Required]
-		public required DateTime Date { get; set; } = DateTime.Now;
+		public  DateTime Date { get; set; } = DateTime.Now;
 		[Required]
-		public required string UserId { get; set; } = "System";
+		public  string UserId { get; set; } = "System"; //id.tostring
 		[Required]
-		public required ESeverity Severity { get; set; } = ESeverity.Information;
+		public  ESeverity Severity { get; set; } = ESeverity.Information;
 		[Required]
-		public required string Message { get; set; }
+		public  string Message { get; set; }
 
 		public override string ToString()
 		{

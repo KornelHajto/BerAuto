@@ -6,11 +6,11 @@ namespace BerAuto.Models
     public class Category
     {
 		[Key, Required]
-		public required string ID { get; set; }
+		public  Guid ID { get; set; } = Guid.NewGuid();
 		[Required]
-		public required string Name { get; set; }
+		public  string Name { get; set; }
 		[Required]
-		public required int DailyRate { get; set; }
+		public  int DailyRate { get; set; }
 		public ICollection<Car>? Cars { get; set; }
 
 		public override string ToString()

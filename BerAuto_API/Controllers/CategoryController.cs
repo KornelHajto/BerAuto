@@ -38,7 +38,7 @@ namespace BerAuto_API.Controllers
 			return BadRequest(response);
 		}
 
-        [HttpPost]
+        [HttpPost("CreateCategory")]
         public async Task<IActionResult> CreateCategory([FromBody] Category category)
         {
 			if (category == null) return BadRequest("Invalid category data.");

@@ -7,16 +7,16 @@ namespace BerAuto.Models
 	public class Car
 	{
 		[Key, Required]
-		public required string ID { get; set; }
+		public Guid ID { get; set; } = Guid.NewGuid();
 		[Required]
-		public required string PlateNumber { get; set; } //rendszám
+		public  string PlateNumber { get; set; } //rendszám
 		[Required]
-		public required string Type { get; set; } //márka + modell
+		public  string Type { get; set; } //márka + modell
 		[Required]
-		public required int Odometer { get; set; } = 0; //kilóméteróra
+		public  int Odometer { get; set; } = 0; //kilóméteróra
 		[Required]
-		public required bool Available { get; set; } = true; //kölcsönözhetőség
-		public string? CategoryId { get; set; } //kategória
+		public  bool Available { get; set; } = true; //kölcsönözhetőség
+		public Guid? CategoryId { get; set; } //kategória
 		public Category? Category { get; set; }
 		public string? Description { get; set; }
 		public ICollection<CarRent>? CarRents { get; set; }

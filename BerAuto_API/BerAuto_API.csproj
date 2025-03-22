@@ -32,4 +32,8 @@
       <ProjectReference Include="..\BerAuto_Lib\BerAuto_Lib.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Migrations\" />
+    </ItemGroup>
+
 </Project>

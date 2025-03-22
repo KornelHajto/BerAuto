@@ -6,12 +6,12 @@ namespace BerAuto.Models
     public class Rent
     {
         [Key, Required]
-        public required string ID { get; set; }
+        public  Guid ID { get; set; } = Guid.NewGuid();
 		[Required]
-		public required string RenterID { get; set; }
+		public  Guid RenterID { get; set; }
         public User? Renter { get; set; }
 		[Required]
-		public required ERentStatus Status { get; set; }
+		public  ERentStatus Status { get; set; }
         public DateTime ApplicationTime { get; set; } = DateTime.Now;
         public int Owed { get; set; } // fizetendő
 

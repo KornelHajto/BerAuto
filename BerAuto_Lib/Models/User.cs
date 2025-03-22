@@ -6,15 +6,15 @@ namespace BerAuto.Models
     public class User
     {
         [Key, Required]
-        public required string ID { get; set; }
+        public  Guid ID { get; set; } = Guid.NewGuid();
 		[Required]
-		public required string Name { get; set; }
+		public  string Name { get; set; }
 		[Required, EmailAddress]
-		public required string Email { get; set; }
+		public  string Email { get; set; }
 		[Required]
-		public required string Address { get; set; }
+		public  string Address { get; set; }
 		[Required]
-		public required string PhoneNumber { get; set; }
+		public  string PhoneNumber { get; set; }
         public EUserType AccesLevel { get; set; } = EUserType.User;
 		public string? Password { get; set; }
 		public bool Enabled { get; set; }
