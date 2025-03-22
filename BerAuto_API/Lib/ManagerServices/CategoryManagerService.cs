@@ -18,7 +18,7 @@ namespace BerAuto.Lib.ManagerServices
 			var cachedCategories = await _cache.GetStringAsync("categories");
 			if (!string.IsNullOrEmpty(cachedCategories))
 			{
-				var category = JsonConvert.DeserializeObject<List<Category>>(cachedCategories).Where(c=> c.ID.Equals(ID)).FirstOrDefault();
+				var category = JsonConvert.DeserializeObject<List<Category>>(cachedCategories).Where(c=> ID.Equals(c.ID.ToString())).FirstOrDefault();
 				return category;
 			}
 			var categoryFromDb = await _dbContext.Categories.Where(c => c.ID.Equals(ID)).FirstOrDefaultAsync();

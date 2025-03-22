@@ -3,52 +3,16 @@
   "WorkspaceRootPath": "C:\\ADATOK\\ProgProjects\\BerAuto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\adatok\\progprojects\\berauto\\berauto_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|c:\\adatok\\progprojects\\berauto\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\adatok\\progprojects\\berauto\\berauto_api\\migrations\\20250322180427_newmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\migrations\\20250322180427_newmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{528147B4-4114-44E5-BA73-2AC56DCB0614}|BerAuto_Lib\\BerAuto_Lib.csproj|c:\\adatok\\progprojects\\berauto\\berauto_lib\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{528147B4-4114-44E5-BA73-2AC56DCB0614}|BerAuto_Lib\\BerAuto_Lib.csproj|solutionrelative:berauto_lib\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{528147B4-4114-44E5-BA73-2AC56DCB0614}|BerAuto_Lib\\BerAuto_Lib.csproj|c:\\adatok\\progprojects\\berauto\\berauto_lib\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{528147B4-4114-44E5-BA73-2AC56DCB0614}|BerAuto_Lib\\BerAuto_Lib.csproj|solutionrelative:berauto_lib\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{528147B4-4114-44E5-BA73-2AC56DCB0614}|BerAuto_Lib\\BerAuto_Lib.csproj|c:\\adatok\\progprojects\\berauto\\berauto_lib\\models\\rent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{528147B4-4114-44E5-BA73-2AC56DCB0614}|BerAuto_Lib\\BerAuto_Lib.csproj|solutionrelative:berauto_lib\\models\\rent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{528147B4-4114-44E5-BA73-2AC56DCB0614}|BerAuto_Lib\\BerAuto_Lib.csproj|c:\\adatok\\progprojects\\berauto\\berauto_lib\\models\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{528147B4-4114-44E5-BA73-2AC56DCB0614}|BerAuto_Lib\\BerAuto_Lib.csproj|solutionrelative:berauto_lib\\models\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{528147B4-4114-44E5-BA73-2AC56DCB0614}|BerAuto_Lib\\BerAuto_Lib.csproj|c:\\adatok\\progprojects\\berauto\\berauto_lib\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{528147B4-4114-44E5-BA73-2AC56DCB0614}|BerAuto_Lib\\BerAuto_Lib.csproj|solutionrelative:berauto_lib\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{528147B4-4114-44E5-BA73-2AC56DCB0614}|BerAuto_Lib\\BerAuto_Lib.csproj|c:\\adatok\\progprojects\\berauto\\berauto_lib\\models\\carrent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{528147B4-4114-44E5-BA73-2AC56DCB0614}|BerAuto_Lib\\BerAuto_Lib.csproj|solutionrelative:berauto_lib\\models\\carrent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\adatok\\progprojects\\berauto\\berauto_api\\lib\\database\\api_dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\lib\\database\\api_dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\adatok\\progprojects\\berauto\\berauto_api\\lib\\managerservices\\categorymanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\lib\\managerservices\\categorymanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\adatok\\progprojects\\berauto\\berauto_api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528147B4-4114-44E5-BA73-2AC56DCB0614}|BerAuto_Lib\\BerAuto_Lib.csproj|c:\\adatok\\progprojects\\berauto\\berauto_lib\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{528147B4-4114-44E5-BA73-2AC56DCB0614}|BerAuto_Lib\\BerAuto_Lib.csproj|solutionrelative:berauto_lib\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,150 +30,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\appsettings.json",
-              "RelativeDocumentMoniker": "BerAuto_API\\appsettings.json",
-              "ToolTip": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\appsettings.json",
-              "RelativeToolTip": "BerAuto_API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-22T19:55:34.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "docker-compose.yml",
-              "DocumentMoniker": "C:\\ADATOK\\ProgProjects\\BerAuto\\docker-compose.yml",
-              "RelativeDocumentMoniker": "docker-compose.yml",
-              "ToolTip": "C:\\ADATOK\\ProgProjects\\BerAuto\\docker-compose.yml",
-              "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-03-22T19:54:46.831Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "20250322180427_NewModels.cs",
-              "DocumentMoniker": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\Migrations\\20250322180427_NewModels.cs",
-              "RelativeDocumentMoniker": "BerAuto_API\\Migrations\\20250322180427_NewModels.cs",
-              "ToolTip": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\Migrations\\20250322180427_NewModels.cs",
-              "RelativeToolTip": "BerAuto_API\\Migrations\\20250322180427_NewModels.cs",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\Models\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "BerAuto_Lib\\Models\\ApiResponse.cs",
+              "ToolTip": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\Models\\ApiResponse.cs",
+              "RelativeToolTip": "BerAuto_Lib\\Models\\ApiResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T18:04:31.429Z",
+              "WhenOpened": "2025-03-22T20:20:40.826Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\Models\\User.cs",
-              "RelativeDocumentMoniker": "BerAuto_Lib\\Models\\User.cs",
-              "ToolTip": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\Models\\User.cs",
-              "RelativeToolTip": "BerAuto_Lib\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T16:11:44.092Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Rent.cs",
-              "DocumentMoniker": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\Models\\Rent.cs",
-              "RelativeDocumentMoniker": "BerAuto_Lib\\Models\\Rent.cs",
-              "ToolTip": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\Models\\Rent.cs",
-              "RelativeToolTip": "BerAuto_Lib\\Models\\Rent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T16:11:26.294Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Log.cs",
-              "DocumentMoniker": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\Models\\Log.cs",
-              "RelativeDocumentMoniker": "BerAuto_Lib\\Models\\Log.cs",
-              "ToolTip": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\Models\\Log.cs",
-              "RelativeToolTip": "BerAuto_Lib\\Models\\Log.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T16:09:39.5Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "BerAuto_Lib\\Models\\Category.cs",
-              "ToolTip": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\Models\\Category.cs",
-              "RelativeToolTip": "BerAuto_Lib\\Models\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T16:09:30.615Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CarRent.cs",
-              "DocumentMoniker": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\Models\\CarRent.cs",
-              "RelativeDocumentMoniker": "BerAuto_Lib\\Models\\CarRent.cs",
-              "ToolTip": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\Models\\CarRent.cs",
-              "RelativeToolTip": "BerAuto_Lib\\Models\\CarRent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T16:09:09.257Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Car.cs",
-              "DocumentMoniker": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\Models\\Car.cs",
-              "RelativeDocumentMoniker": "BerAuto_Lib\\Models\\Car.cs",
-              "ToolTip": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\Models\\Car.cs",
-              "RelativeToolTip": "BerAuto_Lib\\Models\\Car.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T16:07:09.492Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "API_DbContext.cs",
-              "DocumentMoniker": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\Lib\\Database\\API_DbContext.cs",
-              "RelativeDocumentMoniker": "BerAuto_API\\Lib\\Database\\API_DbContext.cs",
-              "ToolTip": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\Lib\\Database\\API_DbContext.cs",
-              "RelativeToolTip": "BerAuto_API\\Lib\\Database\\API_DbContext.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T15:17:56.024Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "CategoryManagerService.cs",
               "DocumentMoniker": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\Lib\\ManagerServices\\CategoryManagerService.cs",
               "RelativeDocumentMoniker": "BerAuto_API\\Lib\\ManagerServices\\CategoryManagerService.cs",
               "ToolTip": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\Lib\\ManagerServices\\CategoryManagerService.cs",
               "RelativeToolTip": "BerAuto_API\\Lib\\ManagerServices\\CategoryManagerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAB2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T12:36:51.821Z"
+              "WhenOpened": "2025-03-22T12:36:51.821Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "BerAuto_API\\Controllers\\CategoryController.cs",
               "ToolTip": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\Controllers\\CategoryController.cs",
               "RelativeToolTip": "BerAuto_API\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwC0AAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwC8AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T12:32:53.696Z"
+              "WhenOpened": "2025-03-22T12:32:53.696Z",
+              "EditorCaption": ""
             }
           ]
         }

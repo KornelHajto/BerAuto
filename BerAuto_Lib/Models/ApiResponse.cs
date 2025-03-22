@@ -8,8 +8,8 @@ namespace BerAuto.Models
 {
     public class ApiResponse
     {
-		public int StatusCode { get; set; } = 0;
-		public string? Message { get; set; }
+		public int StatusCode { get; set; } = 200;
+		public string? Message { get; set; } = "Success";
 		public DateTime Date { get; set; } = DateTime.Now;
 		public object? Data { get; set; }
 	}
