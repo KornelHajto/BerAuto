@@ -5,13 +5,16 @@ namespace BerAuto.Models
     [Table("Users")]
     public class User
     {
-        [Key]
-        public required string ID { get; set; }
-        public required string Name { get; set; }
-		[EmailAddress]
-		public required string Email { get; set; }
-		public required string Address { get; set; }
-		public required string PhoneNumber { get; set; }
+        [Key, Required]
+        public  Guid ID { get; set; } = Guid.NewGuid();
+		[Required]
+		public  string Name { get; set; }
+		[Required, EmailAddress]
+		public  string Email { get; set; }
+		[Required]
+		public  string Address { get; set; }
+		[Required]
+		public  string PhoneNumber { get; set; }
         public EUserType AccesLevel { get; set; } = EUserType.User;
 		public string? Password { get; set; }
 		public bool Enabled { get; set; }

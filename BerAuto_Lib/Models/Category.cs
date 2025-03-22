@@ -5,10 +5,12 @@ namespace BerAuto.Models
 	[Table("Categories")]
     public class Category
     {
-		[Key]
-		public required string ID { get; set; }
-		public required string Name { get; set; }
-		public required int DailyRate { get; set; }
+		[Key, Required]
+		public  Guid ID { get; set; } = Guid.NewGuid();
+		[Required]
+		public  string Name { get; set; }
+		[Required]
+		public  int DailyRate { get; set; }
 		public ICollection<Car>? Cars { get; set; }
 
 		public override string ToString()
