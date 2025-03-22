@@ -14,7 +14,7 @@ namespace BerAuto.Lib.ManagerServices
 			_cache = cache;
 		}
 
-		public async Task<IEnumerable<Category>> GetCategory(string ID) {
+		public async Task<Category> GetCategory(string ID) {
 			var cachedCategories = await _cache.GetStringAsync("categories");
 			if (!string.IsNullOrEmpty(cachedCategories))
 			{
@@ -71,5 +71,6 @@ namespace BerAuto.Lib.ManagerServices
 			await _dbContext.SaveChangesAsync();
 			await _cache.RemoveAsync("categories");
 		}
+
 	}
 }
