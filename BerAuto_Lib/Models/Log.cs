@@ -5,16 +5,12 @@ namespace BerAuto.Models
     [Table("Logs")]
     public class Log
     {
-		[Key, Required]
-		public int ID { get; set; }
-		[Required]
-		public DateTime Date { get; set; } = DateTime.Now;
-		[Required]
-		public string UserId { get; set; } = "System";
-		[Required]
-		public ESeverity Severity { get; set; } = ESeverity.Information;
-		[Required]
-		public string Message { get; set; }
+		[Key]
+		public required int ID { get; set; }
+		public required DateTime Date { get; set; } = DateTime.Now;
+		public required string UserId { get; set; } = "System";
+		public required ESeverity Severity { get; set; } = ESeverity.Information;
+		public required string Message { get; set; }
 
 		public override string ToString()
 		{
