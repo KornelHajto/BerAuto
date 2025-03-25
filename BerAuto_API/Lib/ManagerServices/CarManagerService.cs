@@ -1,6 +1,7 @@
 ﻿using BerAuto.Models;
 using Microsoft.Extensions.Caching.Distributed;
 using Newtonsoft.Json;
+using System.Linq;
 
 namespace BerAuto.Lib.ManagerServices
 {
@@ -115,6 +116,12 @@ namespace BerAuto.Lib.ManagerServices
 		{
 			var car = await GetCar(ID);
 			return car != null;
+		}
+
+		public async Task<IEnumerable<Car>> listCarsWithCategory(string ID)
+		{
+			var cars = await ListCars();
+			return cars.Where(c => ID.Equals(c.CategoryId.ToString())).ToList();
 		}
 
 	}

@@ -1,7 +1,7 @@
 ﻿using BerAuto.Lib.ManagerServices;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Caching.Distributed;
+
 using Newtonsoft.Json;
 
 namespace BerAuto_API.Controllers
@@ -75,7 +75,7 @@ namespace BerAuto_API.Controllers
 			return BadRequest(response);
 		}
 
-		[HttpPost("UpdateCategory")]
+		[HttpPut("UpdateCategory")]
 		public async Task<IActionResult> UpdateCategory([FromBody] Category category) {
 			if (category == null) return BadRequest("Invalid category data.");
 			ApiResponse response = new ApiResponse();
