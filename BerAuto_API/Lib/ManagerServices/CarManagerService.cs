@@ -38,7 +38,6 @@ namespace BerAuto.Lib.ManagerServices
 
 		public async Task<Car> GetCar(string ID)
 		{
-			if (!await doesCarExists(ID)) throw new Exception("Car does not exist");
 			var cachedCars = await _cache.GetStringAsync("cars");
 			if (!string.IsNullOrEmpty(cachedCars))
 			{
