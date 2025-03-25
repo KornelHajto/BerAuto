@@ -38,6 +38,7 @@ namespace BerAuto.Lib.ManagerServices
 
 		public async Task<Car> GetCar(string ID)
 		{
+			if (!await doesCarExists(ID)) throw new Exception("Car does not exist");
 			var cachedCars = await _cache.GetStringAsync("cars");
 			if (!string.IsNullOrEmpty(cachedCars))
 			{
@@ -79,6 +80,7 @@ namespace BerAuto.Lib.ManagerServices
 		}
 
 		public async Task<bool> IsAvailableOnDayInterval(string ID, DateTime startDate, DateTime endDate) {
+			if (!await doesCarExists(ID)) throw new Exception("Car does not exist");
 			Car car = await GetCar(ID);
 			if (car == null) return false;
 			var carRents = await _dbContext.CarRents.Where(cr => cr.CarID.Equals(ID)).ToListAsync();
@@ -92,6 +94,7 @@ namespace BerAuto.Lib.ManagerServices
 
 		public async Task<IEnumerable<CarRentDetails>> GetCarRentHistory(string ID)
 		{
+			if(!await doesCarExists(ID)) throw new Exception("Car does not exist");
 			Car car = await GetCar(ID);
 			//TODO: ha carrentmanagerservice kesz -> abbol listCarRents
 			var carRents = await _dbContext.CarRents.Where(cr => cr.CarID.Equals(ID)).ToListAsync();
@@ -107,6 +110,12 @@ namespace BerAuto.Lib.ManagerServices
 				i++;
 			}
 			return carRentDetails;
+		}
+
+		public async Task<bool> doesCarExists(string ID)
+		{
+			var car = await GetCar(ID);
+			return car != null;
 		}
 
 	}
