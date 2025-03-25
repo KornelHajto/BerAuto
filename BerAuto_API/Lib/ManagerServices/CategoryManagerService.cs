@@ -31,8 +31,6 @@ namespace BerAuto.Lib.ManagerServices
 			var categoriesFromDb = await _dbContext.Categories.OrderBy(c => c.ID).ToListAsync();
 			var serializedData = JsonConvert.SerializeObject(categoriesFromDb);
 			await _cache.SetStringAsync("categories", serializedData, cacheOptions);
-
-
 			return categoryFromDb;
 		}
 		
@@ -70,6 +68,12 @@ namespace BerAuto.Lib.ManagerServices
 			_dbContext.Categories.Update(category);
 			await _dbContext.SaveChangesAsync();
 			await _cache.RemoveAsync("categories");
+		}
+
+		public async Task<bool> doesCategoryExists(string ID)
+		{
+			var category = await _dbContext.Categories.Where(c => c.ID.Equals(ID)).FirstOrDefaultAsync();
+			return category != null;
 		}
 
 	}
