@@ -94,7 +94,7 @@ namespace BerAuto_API.Controllers
 			ApiResponse response = new ApiResponse();
 			try
 			{
-				CarViewDTO car = await carManager.UpdateCarOdometer(carId, odometer);
+				CarViewDTO car = await carManager.UpdateCarOdometer(id, odometer);
 				//await $"Created new Product: {category.Dump()}".WriteLogAsync(this._CurrentUser);
 				return AcceptedAtAction(nameof(ListCars), car.ID, car);
 			}
@@ -113,7 +113,7 @@ namespace BerAuto_API.Controllers
 			ApiResponse response = new ApiResponse();
 			try
 			{
-				CarViewDTO car = await carManager.UpdateCarAvailablity(carId, available);
+				CarViewDTO car = await carManager.UpdateCarAvailablity(id, available);
 				//await $"Created new Product: {category.Dump()}".WriteLogAsync(this._CurrentUser);
 				return AcceptedAtAction(nameof(ListCars), car.ID, car);
 			}
@@ -132,7 +132,7 @@ namespace BerAuto_API.Controllers
 			ApiResponse response = new ApiResponse();
 			try
 			{
-				CarViewDTO car = await carManager.AppendCarDescription(carId, description);
+				CarViewDTO car = await carManager.AppendCarDescription(id, description);
 				//await $"Created new Product: {category.Dump()}".WriteLogAsync(this._CurrentUser);
 				return AcceptedAtAction(nameof(ListCars), car.ID, car);
 			}
