@@ -37,7 +37,7 @@ namespace BerAuto_API.Controllers
 			ApiResponse response = new ApiResponse();
 			try
 			{
-				response.Data = await carManager.GetCar(ID);
+				response.Data = await carManager.GetCarDTO(ID);
 				return Ok(response);
 			}
 			catch (Exception e)
@@ -93,8 +93,7 @@ namespace BerAuto_API.Controllers
 			ApiResponse response = new ApiResponse();
 			try
 			{
-				var car = await carManager.GetCar(ID);
-				await carManager.DeleteCar(car);
+				await carManager.DeleteCar(ID);
 				response.Message = "Car deleted successfully";
 				return Ok(response);
 			}
@@ -106,13 +105,12 @@ namespace BerAuto_API.Controllers
 			return BadRequest(response);
 		}
 
-		[HttpGet("IsAvailable/{ID}")]
+		[HttpGet("IsAvailable/{ID}")] //not working properly throws: 404 not found
 		public async Task<IActionResult> IsAvailable([FromBody] string ID, DateTime startDate, DateTime endDate)
 		{
 			ApiResponse response = new ApiResponse();
 			try
 			{
-				var car = await carManager.GetCar(ID);
 				response.Data = carManager.IsAvailableOnDayInterval(ID, startDate, endDate);
 				return Ok(response);
 			}
@@ -141,7 +139,7 @@ namespace BerAuto_API.Controllers
 			return BadRequest(response);
 		}
 
-		[HttpGet("GetCarWithCategory/{ID}")]
+		[HttpGet("GetCarsWithCategory/{ID}")]
 		public async Task<IActionResult> GetCarWithCategory(string ID)
 		{
 			ApiResponse response = new ApiResponse();
