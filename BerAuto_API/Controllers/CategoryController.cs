@@ -19,7 +19,7 @@ namespace BerAuto_API.Controllers
         }
 
 
-        [HttpGet("ListCategories")]
+        [HttpGet]
         public async Task<IActionResult> ListCategories()
         {
             
@@ -31,7 +31,7 @@ namespace BerAuto_API.Controllers
 			}
 			catch (Exception e)
 			{
-				response.StatusCode = 203;
+				response.StatusCode = 400;
 				response.Message = e.Message;
 				//await $"Error occured: \r\nError code: {response.StatusCode}\r\nError message: {e.Message}".WriteErrorAsync(this._CurrentUser);
 			}
@@ -39,7 +39,7 @@ namespace BerAuto_API.Controllers
 		}
 
 		
-		[HttpGet("GetCategory/{ID}")]
+		[HttpGet("{ID}")]
 		public async Task<IActionResult> GetCategory(string ID) {
 			ApiResponse response = new ApiResponse();
 			try
@@ -48,49 +48,71 @@ namespace BerAuto_API.Controllers
 				return Ok(response);
 			}
 			catch (Exception e) {
-				response.StatusCode = 201;
+				response.StatusCode = 400;
 				response.Message = e.Message;
 			}
 			return BadRequest(response);
 		}
 		
 
-        [HttpPost("CreateCategory")]
-        public async Task<IActionResult> CreateCategory([FromBody] Category category)
+        [HttpPost]
+        public async Task<IActionResult> CreateCategory([FromBody] string name, int dailyRate)
         {
-			if (category == null) return BadRequest("Invalid category data.");
+			if (name == null || dailyRate == null) return BadRequest("Invalid category data.");
 
 			ApiResponse response = new ApiResponse();
             try
             {
-                await categoryManager.CreateCategory(category);
+				Category c = new Category();
+				c.Name = name;
+				c.DailyRate = dailyRate;
+				await categoryManager.CreateCategory(c);
 				//await $"Created new Product: {category.Dump()}".WriteLogAsync(this._CurrentUser);
-				return CreatedAtAction(nameof(ListCategories), new { id = category.ID }, category);
+				return CreatedAtAction(nameof(ListCategories), new { id = c.ID }, c);
 			}
 			catch (Exception e)
 			{
-				response.StatusCode = 202;
+				response.StatusCode = 400;
 				response.Message = e.Message;
 			}
 			return BadRequest(response);
 		}
 
-		[HttpPut("UpdateCategory")]
-		public async Task<IActionResult> UpdateCategory([FromBody] Category category) {
-			if (category == null) return BadRequest("Invalid category data.");
+		[HttpPut("name")]
+		public async Task<IActionResult> UpdateCategoryName([FromBody] string ID, string NewName) {
+			if (ID == null || NewName == null) return BadRequest("Invalid category data.");
 			ApiResponse response = new ApiResponse();
 			try
 			{
-				await categoryManager.UpdateCategory(category);
+				Category category = await categoryManager.UpdateCategoryName(ID, NewName);
 				//await $"Created new Product: {category.Dump()}".WriteLogAsync(this._CurrentUser);
 				return AcceptedAtAction(nameof(ListCategories), category.ID , category);
 			}
 			catch (Exception e)
 			{
-				response.StatusCode = 202;
+				response.StatusCode = 400;
 				response.Message = e.Message;
 			}
 			return BadRequest(response);
 		}
-    }
+
+		[HttpPut("rate")]
+		public async Task<IActionResult> UpdateCategoryRate([FromBody] string ID, int NewRate)
+		{
+			if (ID == null || NewRate == null) return BadRequest("Invalid category data.");
+			ApiResponse response = new ApiResponse();
+			try
+			{
+				Category category = await categoryManager.UpdateCategoryRate(ID, NewRate);
+				//await $"Created new Product: {category.Dump()}".WriteLogAsync(this._CurrentUser);
+				return AcceptedAtAction(nameof(ListCategories), category.ID, category);
+			}
+			catch (Exception e)
+			{
+				response.StatusCode = 400;
+				response.Message = e.Message;
+			}
+			return BadRequest(response);
+		}
+	}
 }

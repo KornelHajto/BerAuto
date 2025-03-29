@@ -14,60 +14,59 @@ namespace BerAuto.Lib.ManagerServices
 			_cache = cache;
 		}
 
-		public async Task<Category> GetCategory(string ID) {
-			var cachedCategories = await _cache.GetStringAsync("categories");
-			if (!string.IsNullOrEmpty(cachedCategories))
-			{
-				var category = JsonConvert.DeserializeObject<List<Category>>(cachedCategories).Where(c=> ID.Equals(c.ID.ToString())).FirstOrDefault();
-				return category;
-			}
-			var categoryFromDb = await _dbContext.Categories.Where(c => c.ID.Equals(ID)).FirstOrDefaultAsync();
-			var cacheOptions = new DistributedCacheEntryOptions
-			{
-				AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10),
-				SlidingExpiration = TimeSpan.FromMinutes(5)
-			};
-
-			var categoriesFromDb = await _dbContext.Categories.OrderBy(c => c.ID).ToListAsync();
-			var serializedData = JsonConvert.SerializeObject(categoriesFromDb);
-			await _cache.SetStringAsync("categories", serializedData, cacheOptions);
-			return categoryFromDb;
-		}
-		
-
 		public async Task<IEnumerable<Category>> ListCategories()
 		{
-			var cachedCategories = await _cache.GetStringAsync("categories");
-			if (!string.IsNullOrEmpty(cachedCategories))
+			var categories = await getCategoriesCache();
+			if (categories == null)
 			{
-				var categories = JsonConvert.DeserializeObject<List<Category>>(cachedCategories);
-				return categories;
+				categories = await getCategoriesDB();
 			}
-
-			var categoriesFromDb = await _dbContext.Categories.OrderBy(c => c.ID).ToListAsync();
-			var cacheOptions = new DistributedCacheEntryOptions
+			if (categories == null)
 			{
-				AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10),
-				SlidingExpiration = TimeSpan.FromMinutes(5)
-			};
-
-			var serializedData = JsonConvert.SerializeObject(categoriesFromDb);
-			await _cache.SetStringAsync("categories", serializedData, cacheOptions);
-
-			return categoriesFromDb;
-
+				return null;
+			}
+			return categories.ToList();
 		}
 
+		public async Task<Category> GetCategory(string ID) {
+			var categories = await getCategoriesCache();
+			if (categories == null)
+			{
+				categories = await getCategoriesDB();
+			}
+			if (categories == null)
+			{
+				return null;
+			}
+			return categories.Where(c => c.ID.ToString().Equals(ID)).FirstOrDefault();
+		}
+		
 		public async Task CreateCategory(Category category) {
 			_dbContext.Categories.Add(category);
 			await _dbContext.SaveChangesAsync();
 			await _cache.RemoveAsync("categories");
 		}
 
-		public async Task UpdateCategory(Category category) {
-			_dbContext.Categories.Update(category);
-			await _dbContext.SaveChangesAsync();
-			await _cache.RemoveAsync("categories");
+		public async Task<Category> UpdateCategoryName(string ID, string NewName)
+		{
+			bool exists = await doesCategoryExists(ID);
+			if(!exists) throw new Exception("Category does not exist");
+
+			var category = await _dbContext.Categories.Where(c => c.ID.ToString().Equals(ID)).FirstOrDefaultAsync();
+			category.Name = NewName;
+			await UpdateCategory(category);
+			return category;
+		}
+
+		public async Task<Category> UpdateCategoryRate(string ID, int NewRate)
+		{
+			bool exists = await doesCategoryExists(ID);
+			if (!exists) throw new Exception("Category does not exist");
+
+			var category = await _dbContext.Categories.Where(c => c.ID.ToString().Equals(ID)).FirstOrDefaultAsync();
+			category.DailyRate = NewRate;
+			await UpdateCategory(category);
+			return category;
 		}
 
 		public async Task<bool> doesCategoryExists(string ID)
@@ -75,6 +74,41 @@ namespace BerAuto.Lib.ManagerServices
 			var category = await _dbContext.Categories.Where(c => c.ID.Equals(ID)).FirstOrDefaultAsync();
 			return category != null;
 		}
+
+		//Private methods:
+		private async Task<IQueryable<Category>> getCategoriesCache()
+		{
+			var cachedCategories = await _cache.GetStringAsync("categories");
+			if (!string.IsNullOrEmpty(cachedCategories))
+			{
+				var category = JsonConvert.DeserializeObject<List<Category>>(cachedCategories);
+				return category.AsQueryable();
+			}
+			return null;
+		}
+
+		private async Task<IQueryable<Category>> getCategoriesDB()
+		{
+			var categoriesFromDb = await _dbContext.Categories.OrderBy(c => c.ID).ToListAsync();
+			var cacheOptions = new DistributedCacheEntryOptions
+			{
+				AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10),
+				SlidingExpiration = TimeSpan.FromMinutes(5)
+			};
+
+			var serializedData = JsonConvert.SerializeObject(categoriesFromDb);
+			await _cache.SetStringAsync("categories", serializedData, cacheOptions);
+			return categoriesFromDb.AsQueryable();
+		}
+
+		private async Task UpdateCategory(Category category)
+		{
+			_dbContext.Categories.Update(category);
+			await _dbContext.SaveChangesAsync();
+			await _cache.RemoveAsync("categories");
+		}
+
+		
 
 	}
 }
