@@ -8,7 +8,7 @@ namespace BerAuto.Models
 {
     public class ApiResponse
     {
-		public int StatusCode { get; set; } = 200;
+		public int StatusCode { get; set; } = 200; //TODO: new defult status code
 		public string? Message { get; set; } = "Success";
 		public DateTime Date { get; set; } = DateTime.Now;
 		public object? Data { get; set; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BerAuto.Models
 {
-    public class CarRentDetails
+    public class CarRentViewDTO
     {
 		public int Index { get; set; }
 		public Guid RenterID { get; set; }
@@ -19,7 +19,7 @@ namespace BerAuto.Models
 		public DateTime StartDate { get; set; }
 		public DateTime EndDate { get; set; }
 
-		public CarRentDetails(CarRent carRent, Rent rent, int i) {
+		public CarRentViewDTO(CarRent carRent, Rent rent, int i) {
 			RentedCar = carRent.Car;
 			Renter = rent.Renter;
 			RenterID = rent.RenterID;
