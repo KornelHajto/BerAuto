@@ -1079,6 +1079,22 @@
           }
         }
       },
+      "Scalar.AspNetCore/2.1.6": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "StackExchange.Redis/2.7.27": {
         "type": "package",
         "dependencies": {
@@ -4126,6 +4142,23 @@
         "pipelines.sockets.unofficial.nuspec"
       ]
     },
+    "Scalar.AspNetCore/2.1.6": {
+      "sha512": "kdF0cjD7GtjICVI1F7jlZurNMWnz05/DU4mIVioKiItFAiBwk68HUD4PZAF6dwO47Z8t8pRaKo3kC70RVV64oA==",
+      "type": "package",
+      "path": "scalar.aspnetcore/2.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net8.0/Scalar.AspNetCore.dll",
+        "lib/net8.0/Scalar.AspNetCore.xml",
+        "lib/net9.0/Scalar.AspNetCore.dll",
+        "lib/net9.0/Scalar.AspNetCore.xml",
+        "scalar.aspnetcore.2.1.6.nupkg.sha512",
+        "scalar.aspnetcore.nuspec"
+      ]
+    },
     "StackExchange.Redis/2.7.27": {
       "sha512": "Uqc2OQHglqj9/FfGQ6RkKFkZfHySfZlfmbCl+hc+u2I/IqunfelQ7QJi7ZhvAJxUtu80pildVX6NPLdDaUffOw==",
       "type": "package",
@@ -5437,27 +5470,28 @@
       "Microsoft.Extensions.Caching.StackExchangeRedis >= 9.0.2",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.21.0",
       "Newtonsoft.Json >= 13.0.3",
+      "Scalar.AspNetCore >= 2.1.6",
       "Swashbuckle.AspNetCore >= 7.2.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bojsz\\.nuget\\packages\\": {},
+    "C:\\Users\\lxndr\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
+      "projectUniqueName": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
       "projectName": "BerAuto_API",
-      "projectPath": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
-      "packagesPath": "C:\\Users\\bojsz\\.nuget\\packages\\",
-      "outputPath": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\obj\\",
+      "projectPath": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
+      "packagesPath": "C:\\Users\\lxndr\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\bojsz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lxndr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5467,14 +5501,15 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.pkg.github.com/KornelHajto/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj": {
-              "projectPath": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj"
+            "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj": {
+              "projectPath": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj"
             }
           }
         }
@@ -5534,6 +5569,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
+          },
+          "Scalar.AspNetCore": {
+            "target": "Package",
+            "version": "[2.1.6, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
