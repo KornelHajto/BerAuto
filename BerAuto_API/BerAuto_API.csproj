@@ -10,6 +10,13 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Compile Remove="Database\**" />
+      <Content Remove="Database\**" />
+      <EmbeddedResource Remove="Database\**" />
+      <None Remove="Database\**" />
+    </ItemGroup>
+
+    <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.2" />
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.2" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="9.0.2" />
