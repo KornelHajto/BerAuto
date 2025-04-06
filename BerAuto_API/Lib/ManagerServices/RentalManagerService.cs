@@ -118,7 +118,7 @@ namespace BerAuto.Lib.ManagerServices
                     // If returned, make car available again
                     if (newStatus == ERentStatus.Returned)
                     {
-                        await _carManager.UpdateCarAvailability(carRent.CarID.ToString(), true);
+                        await _carManager.UpdateCarAvailablity(carRent.CarID.ToString(), true);
                     }
                     else if (newStatus == ERentStatus.InProcess)
                     {
