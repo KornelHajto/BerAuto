@@ -1,9 +1,16 @@
 using BerAuto_API.Lib.Migration;
 using Scalar.AspNetCore;
+using System.Reflection;
+using Mapster;
+using Mapster.DependencyInjection;
+
 
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Add Mapster
+builder.Services.AddMapster(); 
+TypeAdapterConfig.GlobalSettings.Scan(Assembly.GetExecutingAssembly());
 
 // Add services to the container.
 
