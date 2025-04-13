@@ -203,7 +203,9 @@ namespace BerAuto.Lib.ManagerServices
         {
             foreach (var car in cars)
             {
-                car.Category = await categoryManager.GetCategory(car.CategoryId.ToString());
+                //car.Category = await categoryManager.GetCategory(car.CategoryId.ToString());
+                car.Category = await categoryManager.GetCategoryEntity(car.CategoryId.ToString());
+
             }
 
             return cars.Adapt<List<CarViewDTO>>(); // Mapster automatikusan konvertál
@@ -235,7 +237,8 @@ namespace BerAuto.Lib.ManagerServices
         private async Task<CarViewDTO> convertCarToCarViewDTO(Guid ID)
         {
             var car = await GetCar(ID.ToString());
-            car.Category = await categoryManager.GetCategory(car.CategoryId.ToString());
+            //car.Category = await categoryManager.GetCategory(car.CategoryId.ToString());
+            car.Category = await categoryManager.GetCategoryEntity(car.CategoryId.ToString());
 
             return car.Adapt<CarViewDTO>(); 
         }

@@ -3,12 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\fgeri\\Desktop\\BerAuto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\fgeri\\desktop\\berauto\\berauto_api\\_imports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\_imports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\fgeri\\desktop\\berauto\\berauto_api\\lib\\managerservices\\carmanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\lib\\managerservices\\carmanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\fgeri\\desktop\\berauto\\berauto_api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\fgeri\\desktop\\berauto\\berauto_api\\lib\\managerservices\\categorymanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\lib\\managerservices\\categorymanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\fgeri\\desktop\\berauto\\berauto_api\\lib\\database\\api_dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\lib\\database\\api_dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\fgeri\\desktop\\berauto\\berauto_api\\lib\\profiles\\categoryprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\lib\\profiles\\categoryprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528147B4-4114-44E5-BA73-2AC56DCB0614}|BerAuto_Lib\\BerAuto_Lib.csproj|c:\\users\\fgeri\\desktop\\berauto\\berauto_lib\\dto\\categoryviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{528147B4-4114-44E5-BA73-2AC56DCB0614}|BerAuto_Lib\\BerAuto_Lib.csproj|solutionrelative:berauto_lib\\dto\\categoryviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\fgeri\\desktop\\berauto\\berauto_api\\lib\\managerservices\\rentalmanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\lib\\managerservices\\rentalmanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\fgeri\\desktop\\berauto\\berauto_api\\lib\\profiles\\rentalprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\lib\\profiles\\rentalprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528147B4-4114-44E5-BA73-2AC56DCB0614}|BerAuto_Lib\\BerAuto_Lib.csproj|c:\\users\\fgeri\\desktop\\berauto\\berauto_lib\\dto\\rentalcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{528147B4-4114-44E5-BA73-2AC56DCB0614}|BerAuto_Lib\\BerAuto_Lib.csproj|solutionrelative:berauto_lib\\dto\\rentalcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528147B4-4114-44E5-BA73-2AC56DCB0614}|BerAuto_Lib\\BerAuto_Lib.csproj|c:\\users\\fgeri\\desktop\\berauto\\berauto_lib\\dto\\carviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{528147B4-4114-44E5-BA73-2AC56DCB0614}|BerAuto_Lib\\BerAuto_Lib.csproj|solutionrelative:berauto_lib\\dto\\carviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\fgeri\\desktop\\berauto\\berauto_api\\_imports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\_imports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\fgeri\\desktop\\berauto\\berauto_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,28 +55,12 @@
       "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\lib\\profiles\\carprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\fgeri\\desktop\\berauto\\berauto_api\\lib\\managerservices\\carmanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\lib\\managerservices\\carmanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\fgeri\\desktop\\berauto\\berauto_api\\controllers\\rentalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\controllers\\rentalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\fgeri\\desktop\\berauto\\berauto_api\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\fgeri\\desktop\\berauto\\berauto_api\\lib\\managerservices\\categorymanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\lib\\managerservices\\categorymanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{528147B4-4114-44E5-BA73-2AC56DCB0614}|BerAuto_Lib\\BerAuto_Lib.csproj|c:\\users\\fgeri\\desktop\\berauto\\berauto_lib\\dto\\carviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{528147B4-4114-44E5-BA73-2AC56DCB0614}|BerAuto_Lib\\BerAuto_Lib.csproj|solutionrelative:berauto_lib\\dto\\carviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\fgeri\\desktop\\berauto\\berauto_api\\lib\\managerservices\\rentalmanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\lib\\managerservices\\rentalmanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{528147B4-4114-44E5-BA73-2AC56DCB0614}|BerAuto_Lib\\BerAuto_Lib.csproj|c:\\users\\fgeri\\desktop\\berauto\\berauto_lib\\models\\rent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,19 +78,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_imports.cs",
-              "DocumentMoniker": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\_imports.cs",
-              "RelativeDocumentMoniker": "BerAuto_API\\_imports.cs",
-              "ToolTip": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\_imports.cs",
-              "RelativeToolTip": "BerAuto_API\\_imports.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "API_DbContext.cs",
+              "DocumentMoniker": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\Lib\\Database\\API_DbContext.cs",
+              "RelativeDocumentMoniker": "BerAuto_API\\Lib\\Database\\API_DbContext.cs",
+              "ToolTip": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\Lib\\Database\\API_DbContext.cs",
+              "RelativeToolTip": "BerAuto_API\\Lib\\Database\\API_DbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T11:53:30.026Z",
+              "WhenOpened": "2025-04-13T18:00:09.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CategoryManagerService.cs",
+              "DocumentMoniker": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\Lib\\ManagerServices\\CategoryManagerService.cs",
+              "RelativeDocumentMoniker": "BerAuto_API\\Lib\\ManagerServices\\CategoryManagerService.cs",
+              "ToolTip": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\Lib\\ManagerServices\\CategoryManagerService.cs*",
+              "RelativeToolTip": "BerAuto_API\\Lib\\ManagerServices\\CategoryManagerService.cs*",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T18:09:40.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CategoryProfiles.cs",
+              "DocumentMoniker": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\Lib\\Profiles\\CategoryProfiles.cs",
+              "RelativeDocumentMoniker": "BerAuto_API\\Lib\\Profiles\\CategoryProfiles.cs",
+              "ToolTip": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\Lib\\Profiles\\CategoryProfiles.cs*",
+              "RelativeToolTip": "BerAuto_API\\Lib\\Profiles\\CategoryProfiles.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T13:51:57.653Z",
               "EditorCaption": ""
             },
             {
@@ -79,16 +125,107 @@
               "Title": "CategoryController.cs",
               "DocumentMoniker": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "BerAuto_API\\Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "BerAuto_API\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\Controllers\\CategoryController.cs*",
+              "RelativeToolTip": "BerAuto_API\\Controllers\\CategoryController.cs*",
+              "ViewState": "AgIAABkAAAAAAAAAAAAUwDcAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-12T08:36:25.175Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "CarManagerService.cs",
+              "DocumentMoniker": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\Lib\\ManagerServices\\CarManagerService.cs",
+              "RelativeDocumentMoniker": "BerAuto_API\\Lib\\ManagerServices\\CarManagerService.cs",
+              "ToolTip": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\Lib\\ManagerServices\\CarManagerService.cs*",
+              "RelativeToolTip": "BerAuto_API\\Lib\\ManagerServices\\CarManagerService.cs*",
+              "ViewState": "AgIAANoAAAAAAAAAAAAUwAcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T18:05:02.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoryViewDTO.cs",
+              "DocumentMoniker": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_Lib\\DTO\\CategoryViewDTO.cs",
+              "RelativeDocumentMoniker": "BerAuto_Lib\\DTO\\CategoryViewDTO.cs",
+              "ToolTip": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_Lib\\DTO\\CategoryViewDTO.cs",
+              "RelativeToolTip": "BerAuto_Lib\\DTO\\CategoryViewDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T14:13:23.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RentalManagerService.cs",
+              "DocumentMoniker": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\Lib\\ManagerServices\\RentalManagerService.cs",
+              "RelativeDocumentMoniker": "BerAuto_API\\Lib\\ManagerServices\\RentalManagerService.cs",
+              "ToolTip": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\Lib\\ManagerServices\\RentalManagerService.cs*",
+              "RelativeToolTip": "BerAuto_API\\Lib\\ManagerServices\\RentalManagerService.cs*",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAqwOsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T18:09:33.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RentalProfiles.cs",
+              "DocumentMoniker": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\Lib\\Profiles\\RentalProfiles.cs",
+              "RelativeDocumentMoniker": "BerAuto_API\\Lib\\Profiles\\RentalProfiles.cs",
+              "ToolTip": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\Lib\\Profiles\\RentalProfiles.cs*",
+              "RelativeToolTip": "BerAuto_API\\Lib\\Profiles\\RentalProfiles.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T13:53:29.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RentalCreateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_Lib\\DTO\\RentalCreateDTO.cs",
+              "RelativeDocumentMoniker": "BerAuto_Lib\\DTO\\RentalCreateDTO.cs",
+              "ToolTip": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_Lib\\DTO\\RentalCreateDTO.cs",
+              "RelativeToolTip": "BerAuto_Lib\\DTO\\RentalCreateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T14:12:23.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CarViewDTO.cs",
+              "DocumentMoniker": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_Lib\\DTO\\CarViewDTO.cs",
+              "RelativeDocumentMoniker": "BerAuto_Lib\\DTO\\CarViewDTO.cs",
+              "ToolTip": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_Lib\\DTO\\CarViewDTO.cs",
+              "RelativeToolTip": "BerAuto_Lib\\DTO\\CarViewDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T21:35:17.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_imports.cs",
+              "DocumentMoniker": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\_imports.cs",
+              "RelativeDocumentMoniker": "BerAuto_API\\_imports.cs",
+              "ToolTip": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\_imports.cs*",
+              "RelativeToolTip": "BerAuto_API\\_imports.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T11:53:30.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\Program.cs",
               "RelativeDocumentMoniker": "BerAuto_API\\Program.cs",
@@ -101,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "CarProfile.cs",
               "DocumentMoniker": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\Lib\\Profiles\\CarProfile.cs",
               "RelativeDocumentMoniker": "BerAuto_API\\Lib\\Profiles\\CarProfile.cs",
@@ -114,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "RentalController.cs",
               "DocumentMoniker": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\Controllers\\RentalController.cs",
               "RelativeDocumentMoniker": "BerAuto_API\\Controllers\\RentalController.cs",
@@ -127,20 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CarManagerService.cs",
-              "DocumentMoniker": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\Lib\\ManagerServices\\CarManagerService.cs",
-              "RelativeDocumentMoniker": "BerAuto_API\\Lib\\ManagerServices\\CarManagerService.cs",
-              "ToolTip": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\Lib\\ManagerServices\\CarManagerService.cs*",
-              "RelativeToolTip": "BerAuto_API\\Lib\\ManagerServices\\CarManagerService.cs*",
-              "ViewState": "AgIAAMAAAAAAAAAAAAAiwPAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T18:05:02.555Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "CarController.cs",
               "DocumentMoniker": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\Controllers\\CarController.cs",
               "RelativeDocumentMoniker": "BerAuto_API\\Controllers\\CarController.cs",
@@ -153,33 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CarViewDTO.cs",
-              "DocumentMoniker": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_Lib\\DTO\\CarViewDTO.cs",
-              "RelativeDocumentMoniker": "BerAuto_Lib\\DTO\\CarViewDTO.cs",
-              "ToolTip": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_Lib\\DTO\\CarViewDTO.cs",
-              "RelativeToolTip": "BerAuto_Lib\\DTO\\CarViewDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T21:35:17.449Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CategoryManagerService.cs",
-              "DocumentMoniker": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\Lib\\ManagerServices\\CategoryManagerService.cs",
-              "RelativeDocumentMoniker": "BerAuto_API\\Lib\\ManagerServices\\CategoryManagerService.cs",
-              "ToolTip": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\Lib\\ManagerServices\\CategoryManagerService.cs",
-              "RelativeToolTip": "BerAuto_API\\Lib\\ManagerServices\\CategoryManagerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T18:09:40.693Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "Rent.cs",
               "DocumentMoniker": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_Lib\\Models\\Rent.cs",
               "RelativeDocumentMoniker": "BerAuto_Lib\\Models\\Rent.cs",
@@ -192,20 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RentalManagerService.cs",
-              "DocumentMoniker": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\Lib\\ManagerServices\\RentalManagerService.cs",
-              "RelativeDocumentMoniker": "BerAuto_API\\Lib\\ManagerServices\\RentalManagerService.cs",
-              "ToolTip": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\Lib\\ManagerServices\\RentalManagerService.cs",
-              "RelativeToolTip": "BerAuto_API\\Lib\\ManagerServices\\RentalManagerService.cs",
-              "ViewState": "AgIAAN8AAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T18:09:33.196Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "Car.cs",
               "DocumentMoniker": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_Lib\\Models\\Car.cs",
               "RelativeDocumentMoniker": "BerAuto_Lib\\Models\\Car.cs",

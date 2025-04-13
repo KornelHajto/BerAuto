@@ -84,7 +84,7 @@ namespace BerAuto_API.Controllers
 			ApiResponse response = new ApiResponse();
 			try
 			{
-				Category category = await categoryManager.UpdateCategoryName(ID, NewName);
+                CategoryViewDTO category = await categoryManager.UpdateCategoryName(ID, NewName);
 				//await $"Created new Product: {category.Dump()}".WriteLogAsync(this._CurrentUser);
 				return AcceptedAtAction(nameof(ListCategories), category.ID , category);
 			}
@@ -103,7 +103,7 @@ namespace BerAuto_API.Controllers
 			ApiResponse response = new ApiResponse();
 			try
 			{
-				Category category = await categoryManager.UpdateCategoryRate(ID, NewRate);
+                CategoryViewDTO category = await categoryManager.UpdateCategoryRate(ID, NewRate);
 				//await $"Created new Product: {category.Dump()}".WriteLogAsync(this._CurrentUser);
 				return AcceptedAtAction(nameof(ListCategories), category.ID, category);
 			}

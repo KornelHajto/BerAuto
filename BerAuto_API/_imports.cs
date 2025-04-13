@@ -5,4 +5,4 @@ global using BerAuto.Enums;
 global using Microsoft.Extensions.Caching.Distributed;
 global using BerAuto.DTO;
 global using Mapster;
-global using Mapster.DependencyInjection;
+//global using Mapster.DependencyInjection;

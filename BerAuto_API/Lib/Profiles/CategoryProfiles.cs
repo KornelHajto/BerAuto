@@ -7,4 +7,5 @@
             config.NewConfig<Category, CategoryViewDTO>();
         }
     }
+
 }
