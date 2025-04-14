@@ -12,6 +12,7 @@ namespace BerAuto.Lib.Repositories
         IRepository<Log> Logs { get; }
         IRepository<Rent> Rents { get; }
         IRepository<User> Users { get; }
+        API_DbContext DbContext { get; }
         Task<int> CompleteAsync();
     }
 }

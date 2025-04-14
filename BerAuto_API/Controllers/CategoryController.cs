@@ -1,4 +1,5 @@
 ﻿using BerAuto.Lib.ManagerServices;
+using BerAuto.Lib.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,9 +14,9 @@ namespace BerAuto_API.Controllers
         //private readonly API_DbContext _dbContext;
         //private readonly IDistributedCache _cache;
         CategoryManagerService categoryManager;
-        public CategoryController(API_DbContext dbContext,IDistributedCache cache)
+        public CategoryController(IUnitOfWork unitOfWork,IDistributedCache cache)
         {
-            categoryManager = new CategoryManagerService(dbContext, cache);
+            categoryManager = new CategoryManagerService(unitOfWork.DbContext, cache);
         }
 
 

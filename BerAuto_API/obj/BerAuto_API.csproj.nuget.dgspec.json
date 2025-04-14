@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\balog\\source\\berauto\\BerAuto_API\\BerAuto_API.csproj": {}
+    "C:\\Users\\balog\\source\\repos\\BerAuto\\BerAuto_API\\BerAuto_API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\balog\\source\\berauto\\BerAuto_API\\BerAuto_API.csproj": {
+    "C:\\Users\\balog\\source\\repos\\BerAuto\\BerAuto_API\\BerAuto_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\balog\\source\\berauto\\BerAuto_API\\BerAuto_API.csproj",
+        "projectUniqueName": "C:\\Users\\balog\\source\\repos\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
         "projectName": "BerAuto_API",
-        "projectPath": "C:\\Users\\balog\\source\\berauto\\BerAuto_API\\BerAuto_API.csproj",
+        "projectPath": "C:\\Users\\balog\\source\\repos\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
         "packagesPath": "C:\\Users\\balog\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\balog\\source\\berauto\\BerAuto_API\\obj\\",
+        "outputPath": "C:\\Users\\balog\\source\\repos\\BerAuto\\BerAuto_API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\balog\\source\\berauto\\BerAuto_Lib\\BerAuto_Lib.csproj": {
-                "projectPath": "C:\\Users\\balog\\source\\berauto\\BerAuto_Lib\\BerAuto_Lib.csproj"
+              "C:\\Users\\balog\\source\\repos\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj": {
+                "projectPath": "C:\\Users\\balog\\source\\repos\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj"
               }
             }
           }
@@ -132,14 +132,14 @@
         }
       }
     },
-    "C:\\Users\\balog\\source\\berauto\\BerAuto_Lib\\BerAuto_Lib.csproj": {
+    "C:\\Users\\balog\\source\\repos\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\balog\\source\\berauto\\BerAuto_Lib\\BerAuto_Lib.csproj",
+        "projectUniqueName": "C:\\Users\\balog\\source\\repos\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj",
         "projectName": "BerAuto_Lib",
-        "projectPath": "C:\\Users\\balog\\source\\berauto\\BerAuto_Lib\\BerAuto_Lib.csproj",
+        "projectPath": "C:\\Users\\balog\\source\\repos\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj",
         "packagesPath": "C:\\Users\\balog\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\balog\\source\\berauto\\BerAuto_Lib\\obj\\",
+        "outputPath": "C:\\Users\\balog\\source\\repos\\BerAuto\\BerAuto_Lib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

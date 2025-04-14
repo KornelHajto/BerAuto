@@ -14,6 +14,7 @@ namespace BerAuto.Lib.Repositories
         public IRepository<Log> Logs { get; private set; }
         public IRepository<Rent> Rents { get; private set; }
         public IRepository<User> Users { get; private set; }
+        public API_DbContext DbContext => _context;
 
         public UnitOfWork(API_DbContext context)
         {
