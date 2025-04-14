@@ -1,4 +1,5 @@
 ﻿using BerAuto.Lib.ManagerServices;
+using BerAuto.Lib.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BerAuto_API.Controllers
@@ -8,9 +9,9 @@ namespace BerAuto_API.Controllers
 	public class CarController : Controller
     {
 		CarManagerService carManager;
-		public CarController(API_DbContext dbContext, IDistributedCache cache)
+		public CarController(IUnitOfWork unitOfWork, IDistributedCache cache)
 		{
-			carManager = new CarManagerService(dbContext, cache);
+			carManager = new CarManagerService(unitOfWork.DbContext, cache);
 		}
 
 		[HttpGet]

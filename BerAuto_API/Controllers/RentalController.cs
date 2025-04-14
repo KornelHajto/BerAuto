@@ -1,4 +1,5 @@
 ﻿using BerAuto.Lib.ManagerServices;
+using BerAuto.Lib.Repositories;
 using BerAuto.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
@@ -11,9 +12,9 @@ namespace BerAuto_API.Controllers
     {
         private readonly RentalManagerService _rentalManager;
 
-        public RentalController(API_DbContext dbContext, IDistributedCache cache)
+        public RentalController(IUnitOfWork unitOfWork, IDistributedCache cache)
         {
-            _rentalManager = new RentalManagerService(dbContext, cache);
+            _rentalManager = new RentalManagerService(unitOfWork.DbContext, cache);
         }
 
         // kölcsönzések listázása
