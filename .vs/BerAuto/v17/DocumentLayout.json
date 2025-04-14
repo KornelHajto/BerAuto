@@ -1,21 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\balog\\source\\berauto\\",
+  "WorkspaceRootPath": "C:\\Users\\balog\\source\\repos\\BerAuto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\balog\\source\\berauto\\berauto_api\\lib\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\balog\\source\\repos\\berauto\\berauto_api\\controllers\\rentalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\controllers\\rentalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\balog\\source\\repos\\berauto\\berauto_api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\balog\\source\\repos\\berauto\\berauto_api\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\balog\\source\\repos\\berauto\\berauto_api\\lib\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\lib\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\balog\\source\\berauto\\berauto_api\\lib\\repositories\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\balog\\source\\repos\\berauto\\berauto_api\\lib\\repositories\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\lib\\repositories\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\balog\\source\\berauto\\berauto_api\\lib\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\balog\\source\\repos\\berauto\\berauto_api\\lib\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\lib\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\balog\\source\\berauto\\berauto_api\\lib\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\balog\\source\\repos\\berauto\\berauto_api\\lib\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\lib\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,59 +38,100 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RentalController.cs",
+              "DocumentMoniker": "C:\\Users\\balog\\source\\repos\\BerAuto\\BerAuto_API\\Controllers\\RentalController.cs",
+              "RelativeDocumentMoniker": "BerAuto_API\\Controllers\\RentalController.cs",
+              "ToolTip": "C:\\Users\\balog\\source\\repos\\BerAuto\\BerAuto_API\\Controllers\\RentalController.cs",
+              "RelativeToolTip": "BerAuto_API\\Controllers\\RentalController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T20:13:23.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\balog\\source\\repos\\BerAuto\\BerAuto_API\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "BerAuto_API\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\balog\\source\\repos\\BerAuto\\BerAuto_API\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "BerAuto_API\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABIAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T20:13:06.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CarController.cs",
+              "DocumentMoniker": "C:\\Users\\balog\\source\\repos\\BerAuto\\BerAuto_API\\Controllers\\CarController.cs",
+              "RelativeDocumentMoniker": "BerAuto_API\\Controllers\\CarController.cs",
+              "ToolTip": "C:\\Users\\balog\\source\\repos\\BerAuto\\BerAuto_API\\Controllers\\CarController.cs",
+              "RelativeToolTip": "BerAuto_API\\Controllers\\CarController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T20:11:46.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\balog\\source\\berauto\\BerAuto_API\\Lib\\Repositories\\UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\balog\\source\\repos\\BerAuto\\BerAuto_API\\Lib\\Repositories\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "BerAuto_API\\Lib\\Repositories\\UnitOfWork.cs",
-              "ToolTip": "C:\\Users\\balog\\source\\berauto\\BerAuto_API\\Lib\\Repositories\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\balog\\source\\repos\\BerAuto\\BerAuto_API\\Lib\\Repositories\\UnitOfWork.cs",
               "RelativeToolTip": "BerAuto_API\\Lib\\Repositories\\UnitOfWork.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBAAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-14T08:14:02.411Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\balog\\source\\berauto\\BerAuto_API\\Lib\\Repositories\\IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\balog\\source\\repos\\BerAuto\\BerAuto_API\\Lib\\Repositories\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "BerAuto_API\\Lib\\Repositories\\IUnitOfWork.cs",
-              "ToolTip": "C:\\Users\\balog\\source\\berauto\\BerAuto_API\\Lib\\Repositories\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\balog\\source\\repos\\BerAuto\\BerAuto_API\\Lib\\Repositories\\IUnitOfWork.cs",
               "RelativeToolTip": "BerAuto_API\\Lib\\Repositories\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA8AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-14T08:13:36.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "GenericRepository.cs",
-              "DocumentMoniker": "C:\\Users\\balog\\source\\berauto\\BerAuto_API\\Lib\\Repositories\\GenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\balog\\source\\repos\\BerAuto\\BerAuto_API\\Lib\\Repositories\\GenericRepository.cs",
               "RelativeDocumentMoniker": "BerAuto_API\\Lib\\Repositories\\GenericRepository.cs",
-              "ToolTip": "C:\\Users\\balog\\source\\berauto\\BerAuto_API\\Lib\\Repositories\\GenericRepository.cs",
+              "ToolTip": "C:\\Users\\balog\\source\\repos\\BerAuto\\BerAuto_API\\Lib\\Repositories\\GenericRepository.cs",
               "RelativeToolTip": "BerAuto_API\\Lib\\Repositories\\GenericRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T08:13:07.447Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T08:13:07.447Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\balog\\source\\berauto\\BerAuto_API\\Lib\\Repositories\\IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\balog\\source\\repos\\BerAuto\\BerAuto_API\\Lib\\Repositories\\IRepository.cs",
               "RelativeDocumentMoniker": "BerAuto_API\\Lib\\Repositories\\IRepository.cs",
-              "ToolTip": "C:\\Users\\balog\\source\\berauto\\BerAuto_API\\Lib\\Repositories\\IRepository.cs",
+              "ToolTip": "C:\\Users\\balog\\source\\repos\\BerAuto\\BerAuto_API\\Lib\\Repositories\\IRepository.cs",
               "RelativeToolTip": "BerAuto_API\\Lib\\Repositories\\IRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T08:12:31.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T08:12:31.08Z"
             }
           ]
         }
