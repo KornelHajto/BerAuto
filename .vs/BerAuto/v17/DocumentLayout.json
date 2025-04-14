@@ -1,14 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\balog\\source\\berauto\\",
+  "WorkspaceRootPath": "C:\\ADATOK\\ProgProjects\\BerAuto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\balog\\source\\berauto\\berauto_api\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\adatok\\progprojects\\berauto\\berauto_api\\lib\\managerservices\\carmanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\lib\\managerservices\\carmanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\users\\balog\\source\\berauto\\berauto_api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\adatok\\progprojects\\berauto\\berauto_api\\lib\\managerservices\\categorymanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\lib\\managerservices\\categorymanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\adatok\\progprojects\\berauto\\berauto_api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\adatok\\progprojects\\berauto\\berauto_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|c:\\adatok\\progprojects\\berauto\\berauto_api\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{096DA693-A4CE-4B86-A427-93C3452BDADF}|BerAuto_API\\BerAuto_API.csproj|solutionrelative:berauto_api\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,30 +33,69 @@
           "SelectedChildIndex": 4,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\appsettings.json",
+              "RelativeDocumentMoniker": "BerAuto_API\\appsettings.json",
+              "ToolTip": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\appsettings.json",
+              "RelativeToolTip": "BerAuto_API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-03T10:53:53.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "BerAuto_API\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "BerAuto_API\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAcwG8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T18:59:09.67Z"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\balog\\source\\berauto\\BerAuto_API\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "BerAuto_API\\Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\balog\\source\\berauto\\BerAuto_API\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "BerAuto_API\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
+              "Title": "CategoryManagerService.cs",
+              "DocumentMoniker": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\Lib\\ManagerServices\\CategoryManagerService.cs",
+              "RelativeDocumentMoniker": "BerAuto_API\\Lib\\ManagerServices\\CategoryManagerService.cs",
+              "ToolTip": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\Lib\\ManagerServices\\CategoryManagerService.cs",
+              "RelativeToolTip": "BerAuto_API\\Lib\\ManagerServices\\CategoryManagerService.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAA4wEsAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T20:28:57.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T18:39:16.559Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CarController.cs",
-              "DocumentMoniker": "C:\\Users\\balog\\source\\berauto\\BerAuto_API\\Controllers\\CarController.cs",
-              "RelativeDocumentMoniker": "BerAuto_API\\Controllers\\CarController.cs",
-              "ToolTip": "C:\\Users\\balog\\source\\berauto\\BerAuto_API\\Controllers\\CarController.cs",
-              "RelativeToolTip": "BerAuto_API\\Controllers\\CarController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAADAAAAAAAAAA==",
+              "Title": "CarManagerService.cs",
+              "DocumentMoniker": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\Lib\\ManagerServices\\CarManagerService.cs",
+              "RelativeDocumentMoniker": "BerAuto_API\\Lib\\ManagerServices\\CarManagerService.cs",
+              "ToolTip": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\Lib\\ManagerServices\\CarManagerService.cs",
+              "RelativeToolTip": "BerAuto_API\\Lib\\ManagerServices\\CarManagerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T20:28:44.485Z",
+              "WhenOpened": "2025-03-25T09:17:19.767Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CarController.cs",
+              "DocumentMoniker": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\Controllers\\CarController.cs",
+              "RelativeDocumentMoniker": "BerAuto_API\\Controllers\\CarController.cs",
+              "ToolTip": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\Controllers\\CarController.cs",
+              "RelativeToolTip": "BerAuto_API\\Controllers\\CarController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T18:08:08.226Z"
             }
           ]
         }

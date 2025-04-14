@@ -13,5 +13,6 @@ namespace BerAuto.Lib.Repositories
         Task AddAsync(T entity);
         void Update(T entity);
         void Remove(T entity);
-    }
+		
+	}
 }

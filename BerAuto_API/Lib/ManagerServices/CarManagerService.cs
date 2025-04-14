@@ -1,4 +1,5 @@
 ﻿using BerAuto.Models;
+using BerAuto_API.Lib.ManagerServices.Interfaces;
 using Mapster;
 using Microsoft.Extensions.Caching.Distributed;
 using Newtonsoft.Json;
@@ -6,7 +7,7 @@ using System.Linq;
 
 namespace BerAuto.Lib.ManagerServices
 {
-	public class CarManagerService
+	public class CarManagerService :ICarManagerService
 	{
 		private readonly API_DbContext _dbContext;
 		private readonly IDistributedCache _cache;
