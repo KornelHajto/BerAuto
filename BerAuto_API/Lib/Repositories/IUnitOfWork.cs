@@ -5,7 +5,7 @@ using BerAuto_API.Lib.Repositories.Interfaces;
 
 namespace BerAuto.Lib.Repositories
 {
-    public interface IUnitOfWork : IDisposable
+    public interface IUnitOfWork 
     {
         IRentalRepository rentalRepository{ get; }
 		ICategoryRepository categoryRepository { get; }

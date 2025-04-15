@@ -1,9 +1,7 @@
 ﻿using BerAuto.Lib.ManagerServices;
 using BerAuto.Lib.Repositories;
 using BerAuto_API.Lib.ManagerServices.Interfaces;
-
-
-#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+using BerAuto_API.Lib.Repositories.Interfaces;
 
 namespace CryptoSim_API.Lib.UnitOfWork
 {

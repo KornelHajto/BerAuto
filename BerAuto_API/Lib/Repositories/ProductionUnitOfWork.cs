@@ -5,15 +5,19 @@ using BerAuto_API.Lib.Repositories.Interfaces;
 
 namespace BerAuto.Lib.Repositories
 {
-    public class ProductionUnitOfWork(IServiceScopeFactory scopeFactory) : IUnitOfWork
+    public class ProductionUnitOfWork : IUnitOfWork
     {
-		public IRentalRepository rentalRepository { get; private set; } = new RentalRepository(scopeFactory);
-		public ICategoryRepository categoryRepository { get; private set; } = new CategoryRepository(scopeFactory);
-		public ICarRepository carRepository { get; private set; } = new CarRepository(scopeFactory);
+		public IRentalRepository rentalRepository { get; } 
+		public ICategoryRepository categoryRepository { get;}
+		public ICarRepository carRepository { get; }
 
-		public void Dispose()
+		public ProductionUnitOfWork(IServiceScopeFactory scopeFactory)
 		{
-			throw new NotImplementedException();
+			rentalRepository = new RentalRepository(scopeFactory);
+			categoryRepository = new CategoryRepository(scopeFactory);
+			carRepository = new CarRepository(scopeFactory);
 		}
+
+		
 	}
 }
