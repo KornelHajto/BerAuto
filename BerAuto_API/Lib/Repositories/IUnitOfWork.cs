@@ -1,18 +1,14 @@
 ﻿using System;
 using System.Threading.Tasks;
 using BerAuto.Models;
+using BerAuto_API.Lib.Repositories.Interfaces;
 
 namespace BerAuto.Lib.Repositories
 {
-    public interface IUnitOfWork : IDisposable
+    public interface IUnitOfWork 
     {
-        IRepository<Car> Cars { get; }
-        IRepository<CarRent> CarRents { get; }
-        IRepository<Category> Categories { get; }
-        IRepository<Log> Logs { get; }
-        IRepository<Rent> Rents { get; }
-        IRepository<User> Users { get; }
-        API_DbContext DbContext { get; }
-        Task<int> CompleteAsync();
-    }
+        IRentalRepository rentalRepository{ get; }
+		ICategoryRepository categoryRepository { get; }
+		ICarRepository carRepository { get; }
+	}
 }

@@ -9,25 +9,18 @@ namespace BerAuto_API.Controllers
 {
     [Route("/api/[controller]")]
     [ApiController]
-    public class CategoryController : Controller
+    public class CategoryController(IUnitOfWork unitofwork) : Controller
     {
-        //private readonly API_DbContext _dbContext;
-        //private readonly IDistributedCache _cache;
-        CategoryManagerService categoryManager;
-        public CategoryController(IUnitOfWork unitOfWork,IDistributedCache cache)
-        {
-            categoryManager = new CategoryManagerService(unitOfWork.DbContext, cache);
-        }
+		private IUnitOfWork _unitOfWork = unitofwork;
 
-
-        [HttpGet]
+		[HttpGet]
         public async Task<IActionResult> ListCategories()
         {
             
 			ApiResponse response = new ApiResponse();
 			try
 			{
-				response.Data = await categoryManager.ListCategories();
+				response.Data = await _unitOfWork.categoryRepository.ListCategories();
 				return Ok(response);
 			}
 			catch (Exception e)
@@ -45,7 +38,7 @@ namespace BerAuto_API.Controllers
 			ApiResponse response = new ApiResponse();
 			try
 			{
-				response.Data = await categoryManager.GetCategory(ID);
+				response.Data = await _unitOfWork.categoryRepository.GetCategory(ID);
 				return Ok(response);
 			}
 			catch (Exception e) {
@@ -59,7 +52,7 @@ namespace BerAuto_API.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateCategory([FromBody] string name, int dailyRate)
         {
-			if (name == null || dailyRate == null) return BadRequest("Invalid category data.");
+			if (name == null) return BadRequest("Invalid category data.");
 
 			ApiResponse response = new ApiResponse();
             try
@@ -67,7 +60,7 @@ namespace BerAuto_API.Controllers
 				Category c = new Category();
 				c.Name = name;
 				c.DailyRate = dailyRate;
-				await categoryManager.CreateCategory(c);
+				await _unitOfWork.categoryRepository.CreateCategory(c);
 				//await $"Created new Product: {category.Dump()}".WriteLogAsync(this._CurrentUser);
 				return CreatedAtAction(nameof(ListCategories), new { id = c.ID }, c);
 			}
@@ -85,7 +78,7 @@ namespace BerAuto_API.Controllers
 			ApiResponse response = new ApiResponse();
 			try
 			{
-                CategoryViewDTO category = await categoryManager.UpdateCategoryName(ID, NewName);
+                CategoryViewDTO category = await _unitOfWork.categoryRepository.UpdateCategoryName(ID, NewName);
 				//await $"Created new Product: {category.Dump()}".WriteLogAsync(this._CurrentUser);
 				return AcceptedAtAction(nameof(ListCategories), category.ID , category);
 			}
@@ -100,11 +93,11 @@ namespace BerAuto_API.Controllers
 		[HttpPut("rate")]
 		public async Task<IActionResult> UpdateCategoryRate([FromBody] string ID, int NewRate)
 		{
-			if (ID == null || NewRate == null) return BadRequest("Invalid category data.");
+			if (ID == null) return BadRequest("Invalid category data.");
 			ApiResponse response = new ApiResponse();
 			try
 			{
-                CategoryViewDTO category = await categoryManager.UpdateCategoryRate(ID, NewRate);
+                CategoryViewDTO category = await _unitOfWork.categoryRepository.UpdateCategoryRate(ID, NewRate);
 				//await $"Created new Product: {category.Dump()}".WriteLogAsync(this._CurrentUser);
 				return AcceptedAtAction(nameof(ListCategories), category.ID, category);
 			}

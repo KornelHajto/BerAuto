@@ -1,10 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BerAuto_API.Lib.ManagerServices.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
 using Newtonsoft.Json;
 
 namespace BerAuto.Lib.ManagerServices
 {
-	public class CategoryManagerService
+	public class CategoryManagerService :ICategoryManagerService
 	{
 		private readonly API_DbContext _dbContext;
 		private readonly IDistributedCache _cache;

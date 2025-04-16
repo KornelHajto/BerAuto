@@ -1,12 +1,13 @@
 ﻿using BerAuto.DTO;
 using BerAuto.Models;
+using BerAuto_API.Lib.ManagerServices.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Distributed;
 using Newtonsoft.Json;
 
 namespace BerAuto.Lib.ManagerServices
 {
-    public class RentalManagerService
+    public class RentalManagerService :IRentalManagerService
     {
         private readonly API_DbContext _dbContext;
         private readonly IDistributedCache _cache;

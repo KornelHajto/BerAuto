@@ -1,4 +1,5 @@
 using BerAuto_API.Lib.Migration;
+using CryptoSim_API.Lib.UnitOfWork;
 using Scalar.AspNetCore;
 using System.Reflection;
 
@@ -22,6 +23,8 @@ builder.Services.AddStackExchangeRedisCache(options =>
 
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+builder.Services.AddLocalServices();
 
 var app = builder.Build();
 
