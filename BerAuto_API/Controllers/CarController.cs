@@ -1,17 +1,14 @@
 ﻿using BerAuto.Lib.ManagerServices;
+using BerAuto.Lib.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BerAuto_API.Controllers
 {
 	[Route("/api/[controller]")]
 	[ApiController]
-	public class CarController : Controller
+	public class CarController(IUnitOfWork unitofwork) : Controller
     {
-		CarManagerService carManager;
-		public CarController(API_DbContext dbContext, IDistributedCache cache)
-		{
-			carManager = new CarManagerService(dbContext, cache);
-		}
+		private IUnitOfWork _unitOfWork = unitofwork;
 
 		[HttpGet]
 		public async Task<IActionResult> ListCars()
@@ -19,7 +16,7 @@ namespace BerAuto_API.Controllers
 			ApiResponse response = new ApiResponse();
 			try
 			{
-				response.Data = await carManager.ListCars();
+				response.Data = await _unitOfWork.carRepository.ListCars();
 				return Ok(response);
 			}
 			catch (Exception e)
@@ -37,7 +34,7 @@ namespace BerAuto_API.Controllers
 			ApiResponse response = new ApiResponse();
 			try
 			{
-				response.Data = await carManager.GetCarDTO(ID);
+				response.Data = await _unitOfWork.carRepository.GetCarDTO(ID);
 				return Ok(response);
 			}
 			catch (Exception e)
@@ -56,7 +53,7 @@ namespace BerAuto_API.Controllers
 			ApiResponse response = new ApiResponse();
 			try
 			{
-				await carManager.CreateCar(car);
+				await _unitOfWork.carRepository.CreateCar(car);
 				//await $"Created new Product: {category.Dump()}".WriteLogAsync(this._CurrentUser);
 				return CreatedAtAction(nameof(ListCars), new { id = car.ID }, car);
 			}
@@ -75,7 +72,7 @@ namespace BerAuto_API.Controllers
 			ApiResponse response = new ApiResponse();
 			try
 			{
-				CarViewDTO car = await carManager.UpdateCarCategory(carId, categoryId);
+				CarViewDTO car = await _unitOfWork.carRepository.UpdateCarCategory(carId, categoryId);
 				//await $"Created new Product: {category.Dump()}".WriteLogAsync(this._CurrentUser);
 				return AcceptedAtAction(nameof(ListCars), car.ID, car);
 			}
@@ -90,11 +87,11 @@ namespace BerAuto_API.Controllers
 		[HttpPut("odometer")]
 		public async Task<IActionResult> UpdateCarOdometer([FromBody] string id, int odometer)
 		{
-			if (id == null || odometer == null) return BadRequest("Invalid category data.");
+			if (id == null) return BadRequest("Invalid category data.");
 			ApiResponse response = new ApiResponse();
 			try
 			{
-				CarViewDTO car = await carManager.UpdateCarOdometer(id, odometer);
+				CarViewDTO car = await _unitOfWork.carRepository.UpdateCarOdometer(id, odometer);
 				//await $"Created new Product: {category.Dump()}".WriteLogAsync(this._CurrentUser);
 				return AcceptedAtAction(nameof(ListCars), car.ID, car);
 			}
@@ -109,11 +106,11 @@ namespace BerAuto_API.Controllers
 		[HttpPut("available")]
 		public async Task<IActionResult> UpdateCarAvailablity([FromBody] string id, bool available)
 		{
-			if (id == null || available == null) return BadRequest("Invalid category data.");
+			if (id == null) return BadRequest("Invalid category data.");
 			ApiResponse response = new ApiResponse();
 			try
 			{
-				CarViewDTO car = await carManager.UpdateCarAvailablity(id, available);
+				CarViewDTO car = await _unitOfWork.carRepository.UpdateCarAvailablity(id, available);
 				//await $"Created new Product: {category.Dump()}".WriteLogAsync(this._CurrentUser);
 				return AcceptedAtAction(nameof(ListCars), car.ID, car);
 			}
@@ -132,7 +129,7 @@ namespace BerAuto_API.Controllers
 			ApiResponse response = new ApiResponse();
 			try
 			{
-				CarViewDTO car = await carManager.AppendCarDescription(id, description);
+				CarViewDTO car = await _unitOfWork.carRepository.AppendCarDescription(id, description);
 				//await $"Created new Product: {category.Dump()}".WriteLogAsync(this._CurrentUser);
 				return AcceptedAtAction(nameof(ListCars), car.ID, car);
 			}
@@ -150,7 +147,7 @@ namespace BerAuto_API.Controllers
 			ApiResponse response = new ApiResponse();
 			try
 			{
-				await carManager.DeleteCar(ID);
+				await _unitOfWork.carRepository.DeleteCar(ID);
 				response.Message = "Car deleted successfully";
 				return Ok(response);
 			}
@@ -168,7 +165,7 @@ namespace BerAuto_API.Controllers
 			ApiResponse response = new ApiResponse();
 			try
 			{
-				response.Data = carManager.IsAvailableOnDayInterval(ID, startDate, endDate);
+				response.Data = await _unitOfWork.carRepository.IsAvailableOnDayInterval(ID, startDate, endDate);
 				return Ok(response);
 			}
 			catch (Exception e)
@@ -185,7 +182,7 @@ namespace BerAuto_API.Controllers
 			ApiResponse response = new ApiResponse();
 			try
 			{
-				response.Data = await carManager.GetCarRentHistory(ID);
+				response.Data = await _unitOfWork.carRepository.GetCarRentHistory(ID);
 				return Ok(response);
 			}
 			catch (Exception e)
@@ -202,7 +199,7 @@ namespace BerAuto_API.Controllers
 			ApiResponse response = new ApiResponse();
 			try
 			{
-				response.Data = await carManager.listCarsWithCategory(ID);
+				response.Data = await _unitOfWork.carRepository.listCarsWithCategory(ID);
 				return Ok(response);
 			}
 			catch (Exception e)

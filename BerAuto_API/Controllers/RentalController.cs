@@ -1,4 +1,5 @@
 ﻿using BerAuto.Lib.ManagerServices;
+using BerAuto.Lib.Repositories;
 using BerAuto.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
@@ -7,14 +8,9 @@ namespace BerAuto_API.Controllers
 {
     [Route("/api/[controller]")]
     [ApiController]
-    public class RentalController : Controller
+    public class RentalController(IUnitOfWork unitofwork) : Controller
     {
-        private readonly RentalManagerService _rentalManager;
-
-        public RentalController(API_DbContext dbContext, IDistributedCache cache)
-        {
-            _rentalManager = new RentalManagerService(dbContext, cache);
-        }
+        private IUnitOfWork _unitOfWork = unitofwork;
 
         // kölcsönzések listázása
         [HttpGet]
@@ -23,8 +19,8 @@ namespace BerAuto_API.Controllers
             ApiResponse response = new ApiResponse();
             try
             {
-                response.Data = await _rentalManager.ListRentals();
-                return Ok(response);
+                response.Data = await _unitOfWork.rentalRepository.ListRentals();
+				return Ok(response);
             }
             catch (Exception e)
             {
@@ -40,8 +36,8 @@ namespace BerAuto_API.Controllers
             ApiResponse response = new ApiResponse();
             try
             {
-                response.Data = await _rentalManager.GetRentalDTO(ID);
-                return Ok(response);
+                response.Data = await _unitOfWork.rentalRepository.GetRental(ID);
+				return Ok(response);
             }
             catch (Exception e)
             {
@@ -60,8 +56,8 @@ namespace BerAuto_API.Controllers
             ApiResponse response = new ApiResponse();
             try
             {
-                var rentalId = await _rentalManager.CreateRental(rental);
-                return CreatedAtAction(nameof(ListRentals), new { id = rentalId }, rental);
+                var rentalId = await _unitOfWork.rentalRepository.CreateRental(rental);
+				return CreatedAtAction(nameof(ListRentals), new { id = rentalId }, rental);
             }
             catch (Exception e)
             {
@@ -80,7 +76,7 @@ namespace BerAuto_API.Controllers
             ApiResponse response = new ApiResponse();
             try
             {
-                var rentalId = await _rentalManager.CreateRentalWithDetails(
+                var rentalId = await _unitOfWork.rentalRepository.CreateRentalWithDetails(
                     rentalData.RenterId, 
                     rentalData.CarId, 
                     rentalData.StartDate, 
@@ -105,7 +101,7 @@ namespace BerAuto_API.Controllers
             ApiResponse response = new ApiResponse();
             try
             {
-                var rental = await _rentalManager.UpdateRentalStatus(updateData.RentalId, updateData.NewStatus);
+                var rental = await _unitOfWork.rentalRepository.UpdateRentalStatus(updateData.RentalId, updateData.NewStatus);
                 return AcceptedAtAction(nameof(GetRental), new { ID = updateData.RentalId }, rental);
             }
             catch (Exception e)
@@ -123,7 +119,7 @@ namespace BerAuto_API.Controllers
             ApiResponse response = new ApiResponse();
             try
             {
-                response.Data = await _rentalManager.GetRentalDetailsForInvoice(ID);
+                response.Data = await _unitOfWork.rentalRepository.GetRentalDetailsForInvoice(ID);
                 return Ok(response);
             }
             catch (Exception e)
@@ -143,7 +139,7 @@ namespace BerAuto_API.Controllers
             ApiResponse response = new ApiResponse();
             try
             {
-                response.Data = await _rentalManager.SearchRentals(searchTerm);
+                response.Data = await _unitOfWork.rentalRepository.SearchRentals(searchTerm);
                 return Ok(response);
             }
             catch (Exception e)
@@ -161,7 +157,7 @@ namespace BerAuto_API.Controllers
             ApiResponse response = new ApiResponse();
             try
             {
-                response.Data = await _rentalManager.GetCarForRental(rentalId);
+                response.Data = await _unitOfWork.rentalRepository.GetCarForRental(rentalId);
                 return Ok(response);
             }
             catch (Exception e)
@@ -179,7 +175,7 @@ namespace BerAuto_API.Controllers
             ApiResponse response = new ApiResponse();
             try
             {
-                response.Data = await _rentalManager.GetUserRentals(userId);
+                response.Data = await _unitOfWork.rentalRepository.GetUserRentals(userId);
                 return Ok(response);
             }
             catch (Exception e)

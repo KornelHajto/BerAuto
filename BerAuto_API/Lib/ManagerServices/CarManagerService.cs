@@ -1,11 +1,13 @@
 ﻿using BerAuto.Models;
+using BerAuto_API.Lib.ManagerServices.Interfaces;
+using Mapster;
 using Microsoft.Extensions.Caching.Distributed;
 using Newtonsoft.Json;
 using System.Linq;
 
 namespace BerAuto.Lib.ManagerServices
 {
-	public class CarManagerService
+	public class CarManagerService :ICarManagerService
 	{
 		private readonly API_DbContext _dbContext;
 		private readonly IDistributedCache _cache;
@@ -20,18 +22,18 @@ namespace BerAuto.Lib.ManagerServices
 			categoryManager = new CategoryManagerService(dbContext, cache);
 		}
 
-		public async Task<IEnumerable<CarViewDTO>> ListCars() 
+		public async Task<IEnumerable<CarViewDTO>> ListCars()
 		{
 			var cars = await getCarsCache();
-			if(cars == null)
+			if (cars == null)
 			{
 				cars = await getCarsDB();
 			}
-			if(cars == null)
+			if (cars == null)
 			{
 				return null;
 			}
-			return await convertListToDTO(cars);
+			return await convertListToDTO(cars); // Így 
 		}
 
 		public async Task<CarViewDTO> GetCarDTO(string ID)
@@ -179,26 +181,38 @@ namespace BerAuto.Lib.ManagerServices
 			return _dbContext.Cars.OrderBy(c => c.ID).Include(c => c.Category);
 		}
 
+        //private async Task<IEnumerable<CarViewDTO>> convertListToDTO(IQueryable<Car> cars)
+        //{
+        //	foreach (var car in cars)
+        //	{
+        //		car.Category = await categoryManager.GetCategory(car.CategoryId.ToString());
+        //	}
+        //	IEnumerable<CarViewDTO> response = cars.Include(c => c.Category).Select(c => new CarViewDTO
+        //	{
+        //		ID = c.ID,
+        //		PlateNumber = c.PlateNumber,
+        //		Type = c.Type,
+        //		Odometer = c.Odometer,
+        //		Available = c.Available,
+        //		Description = c.Description,
+        //		CategoryName = c.Category.Name,
+        //		DailyRate = c.Category.DailyRate
+        //	}).ToList(); // NE ÍGY ehelyett a fenti
+        //	return response;
+        //}
 		private async Task<IEnumerable<CarViewDTO>> convertListToDTO(IQueryable<Car> cars)
-		{
-			foreach (var car in cars)
-			{
-				car.Category = await categoryManager.GetCategory(car.CategoryId.ToString());
-			}
-			IEnumerable<CarViewDTO> response = cars.Include(c => c.Category).Select(c => new CarViewDTO
-			{
-				ID = c.ID,
-				PlateNumber = c.PlateNumber,
-				Type = c.Type,
-				Odometer = c.Odometer,
-				Available = c.Available,
-				Description = c.Description,
-				CategoryName = c.Category.Name,
-				DailyRate = c.Category.DailyRate
-			}).ToList();
-			return response;
-		}
-		private async Task<bool> doesCarExists(string ID)
+        {
+            foreach (var car in cars)
+            {
+                //car.Category = await categoryManager.GetCategory(car.CategoryId.ToString());
+                car.Category = await categoryManager.GetCategoryEntity(car.CategoryId.ToString());
+
+            }
+
+            return cars.Adapt<List<CarViewDTO>>(); // Mapster automatikusan konvertál
+        }
+
+        private async Task<bool> doesCarExists(string ID)
 		{
 			var car = await GetCar(ID);
 			return car != null;
@@ -221,21 +235,30 @@ namespace BerAuto.Lib.ManagerServices
 			await _dbContext.SaveChangesAsync();
 			await _cache.RemoveAsync("cars");
 		}
+        private async Task<CarViewDTO> convertCarToCarViewDTO(Guid ID)
+        {
+            var car = await GetCar(ID.ToString());
+            //car.Category = await categoryManager.GetCategory(car.CategoryId.ToString());
+            car.Category = await categoryManager.GetCategoryEntity(car.CategoryId.ToString());
 
-		private async Task<CarViewDTO> convertCarToCarViewDTO(Guid ID) {
-			var car = await GetCar(ID.ToString());
-			var category = await categoryManager.GetCategory(car.CategoryId.ToString());
-			return new CarViewDTO
-			{
-				ID = car.ID,
-				PlateNumber = car.PlateNumber,
-				Type = car.Type,
-				Odometer = car.Odometer,
-				Available = car.Available,
-				Description = car.Description,
-				CategoryName = category.Name,
-				DailyRate = category.DailyRate
-			};
-		}
+            return car.Adapt<CarViewDTO>(); 
+        }
+
+		//private async Task<CarViewDTO> convertCarToCarViewDTO(Guid ID) { // Ilyen nevű metódusok 
+		//  //var dto = mapper.Map<CarResponseDTO>(car);
+		//  var car = await GetCar(ID.ToString());
+		//	var category = await categoryManager.GetCategory(car.CategoryId.ToString());
+		//	return new CarViewDTO
+		//	{
+		//		ID = car.ID,
+		//		PlateNumber = car.PlateNumber,
+		//		Type = car.Type,
+		//		Odometer = car.Odometer,
+		//		Available = car.Available,
+		//		Description = car.Description,
+		//		CategoryName = category.Name,
+		//		DailyRate = category.DailyRate
+		//	};
+		//}
 	}
 }

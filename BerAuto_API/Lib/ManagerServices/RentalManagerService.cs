@@ -1,12 +1,13 @@
 ﻿using BerAuto.DTO;
 using BerAuto.Models;
+using BerAuto_API.Lib.ManagerServices.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Distributed;
 using Newtonsoft.Json;
 
 namespace BerAuto.Lib.ManagerServices
 {
-    public class RentalManagerService
+    public class RentalManagerService :IRentalManagerService
     {
         private readonly API_DbContext _dbContext;
         private readonly IDistributedCache _cache;
@@ -254,20 +255,27 @@ namespace BerAuto.Lib.ManagerServices
             await _cache.RemoveAsync("rentals");
         }
 
+        //private async Task<RentViewDTO> convertRentToRentViewDTO(Guid ID)
+        //{
+        //    var rent = await GetRental(ID.ToString());
+        //    var user = await _dbContext.Users.FindAsync(rent.RenterID);
+
+        //    return new RentViewDTO
+        //    {
+        //        ID = rent.ID,
+        //        RenterID = rent.RenterID,
+        //        RenterName = user?.Name ?? "Unknown",
+        //        Status = rent.Status,
+        //        ApplicationTime = rent.ApplicationTime,
+        //        Owed = rent.Owed
+        //    };
+        //}
         private async Task<RentViewDTO> convertRentToRentViewDTO(Guid ID)
         {
             var rent = await GetRental(ID.ToString());
             var user = await _dbContext.Users.FindAsync(rent.RenterID);
-
-            return new RentViewDTO
-            {
-                ID = rent.ID,
-                RenterID = rent.RenterID,
-                RenterName = user?.Name ?? "Unknown",
-                Status = rent.Status,
-                ApplicationTime = rent.ApplicationTime,
-                Owed = rent.Owed
-            };
+            return (rent, user?.Name ?? "Unknown").Adapt<RentViewDTO>();
         }
+
     }
 }
