@@ -39,6 +39,22 @@ builder.Services.AddAuthentication(options =>
         };
     });
 
+builder.Services.AddAuthorization(options =>
+{
+    // Basic role policies
+    options.AddPolicy("RequireAdministrator", policy => 
+        policy.RequireRole(EUserType.Administrator.ToString()));
+    
+    options.AddPolicy("RequireWorker", policy => 
+        policy.RequireRole(EUserType.Administrator.ToString(), EUserType.Worker.ToString()));
+    
+    options.AddPolicy("RequireUser", policy => 
+        policy.RequireRole(EUserType.Administrator.ToString(), EUserType.Worker.ToString(), EUserType.User.ToString()));
+    
+    // All authenticated users
+    options.AddPolicy("RequireAuthenticated", policy => policy.RequireAuthenticatedUser());
+});
+
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
