@@ -63,6 +63,14 @@
               "target": "Package",
               "version": "[1.0.1, )"
             },
+            "BCrypt.Net-Next": {
+              "version": "[4.0.3, )"
+              "target": "Package",
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.2, )"

@@ -21,6 +21,9 @@ namespace BerAuto.Models
 		public string? Description { get; set; }
 		public ICollection<Rent>? Rents { get; set; }
 
+		public string? RefreshToken { get; set; }
+		
+		public DateTime? RefreshTokenExpires { get; set; }
 		public override string ToString()
 		{
             return $"UserID:{ID}, Name: {Name} ({AccesLevel}) - Email: {Email}, Address: {Address}, PhoneNumber: {PhoneNumber}, Description: {Description}";
