@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using BerAuto.DTO;
 using BerAuto.Lib.ManagerServices;
+using BerAuto.Lib.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,11 +13,13 @@ namespace BerAuto_API.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        private readonly AuthManagerService _authManager;
+        private readonly IUnitOfWork _unitOfWork;
+        private readonly IAuthManagerService _authManager;
 
-        public AuthController(API_DbContext dbContext, IConfiguration configuration)
+        public AuthController(IUnitOfWork unitOfWork, IAuthManagerService authManager)
         {
-            _authManager = new AuthManagerService(dbContext, configuration);
+            _unitOfWork = unitOfWork;
+            _authManager = authManager;
         }
 
         [HttpPost("register")]

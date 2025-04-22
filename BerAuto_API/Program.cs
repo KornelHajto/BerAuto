@@ -5,6 +5,10 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Scalar.AspNetCore;
 using System.Reflection;
+using BerAuto.Lib.ManagerServices;
+using BerAuto.Lib.Repositories;
+using BerAuto_API.Lib.Repositories.Interfaces;
+using BerAuto_API.Lib.Repositories;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +16,13 @@ var builder = WebApplication.CreateBuilder(args);
 // Add Mapster
 builder.Services.AddMapster(); 
 TypeAdapterConfig.GlobalSettings.Scan(Assembly.GetExecutingAssembly());
+
+
+//builder.Services.AddScoped<IAuthManagerService, AuthManagerService>();
+builder.Services.AddScoped<IAuthRepository, AuthRepository>();
+builder.Services.AddScoped<IUnitOfWork, ProductionUnitOfWork>();
+
+
 
 // Add services to the container.
 

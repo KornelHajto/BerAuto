@@ -10,5 +10,6 @@ namespace BerAuto.Lib.Repositories
         IRentalRepository rentalRepository{ get; }
 		ICategoryRepository categoryRepository { get; }
 		ICarRepository carRepository { get; }
-	}
+        IAuthRepository AuthRepository { get; }
+    }
 }
