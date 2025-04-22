@@ -1,5 +1,4 @@
 using BerAuto_API.Lib.Migration;
-using CryptoSim_API.Lib.UnitOfWork;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -7,8 +6,9 @@ using Scalar.AspNetCore;
 using System.Reflection;
 using BerAuto.Lib.ManagerServices;
 using BerAuto.Lib.Repositories;
-using BerAuto_API.Lib.Repositories.Interfaces;
 using BerAuto_API.Lib.Repositories;
+using BerAuto_API.Lib.Repositories.Interfaces;
+using BerAuto_API.Lib.Repositories.Interfaces;
 
 
 var builder = WebApplication.CreateBuilder(args);

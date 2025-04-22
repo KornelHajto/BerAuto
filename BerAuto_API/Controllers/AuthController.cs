@@ -3,7 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using BerAuto.DTO;
 using BerAuto.Lib.ManagerServices;
-using BerAuto.Lib.Repositories;
+using BerAuto_API.Lib.Repositories.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

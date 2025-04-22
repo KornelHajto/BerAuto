@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace BerAuto.Lib.Repositories
+namespace BerAuto_API.Lib.Repositories.Interfaces
 {
     public interface IRepository<T> where T : class
     {
@@ -13,6 +13,6 @@ namespace BerAuto.Lib.Repositories
         Task AddAsync(T entity);
         void Update(T entity);
         void Remove(T entity);
-		
-	}
+
+    }
 }

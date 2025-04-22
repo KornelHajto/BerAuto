@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Threading.Tasks;
 using BerAuto.Models;
-using BerAuto_API.Lib.Repositories.Interfaces;
 
-namespace BerAuto.Lib.Repositories
+namespace BerAuto_API.Lib.Repositories.Interfaces
 {
-    public interface IUnitOfWork 
+    public interface IUnitOfWork
     {
-        IRentalRepository rentalRepository{ get; }
-		ICategoryRepository categoryRepository { get; }
-		ICarRepository carRepository { get; }
+        IRentalRepository rentalRepository { get; }
+        ICategoryRepository categoryRepository { get; }
+        ICarRepository carRepository { get; }
         IAuthRepository AuthRepository { get; }
     }
 }
