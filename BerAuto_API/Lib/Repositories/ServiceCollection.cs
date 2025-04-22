@@ -5,7 +5,7 @@ using BerAuto_API.Lib.Repositories.Interfaces;
 
 namespace CryptoSim_API.Lib.UnitOfWork
 {
-	public static class ServiceCollection
+    public static class ServiceCollection
 	{
 		public static void AddLocalServices(this IServiceCollection services)
 		{

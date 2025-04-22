@@ -1,4 +1,5 @@
 ﻿using BerAuto.Lib.Database;
+using BerAuto_API.Lib.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
