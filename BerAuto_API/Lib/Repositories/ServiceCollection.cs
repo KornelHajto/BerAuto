@@ -3,9 +3,10 @@ using BerAuto.Lib.Repositories;
 using BerAuto_API.Lib.ManagerServices.Interfaces;
 using BerAuto_API.Lib.Repositories.Interfaces;
 
-namespace CryptoSim_API.Lib.UnitOfWork
+namespace BerAuto_API.Lib.Repositories
+
 {
-	public static class ServiceCollection
+    public static class ServiceCollection
 	{
 		public static void AddLocalServices(this IServiceCollection services)
 		{
