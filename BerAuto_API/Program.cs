@@ -7,7 +7,6 @@ using Scalar.AspNetCore;
 using System.Reflection;
 using BerAuto.Lib.ManagerServices;
 using BerAuto_API.Lib.ManagerServices.Interfaces;
-using BerAuto.Lib.Repositories;
 
 
 var builder = WebApplication.CreateBuilder(args);
