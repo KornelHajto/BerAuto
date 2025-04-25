@@ -5318,23 +5318,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fgeri\\.nuget\\packages\\": {},
+    "C:\\Users\\bojsz\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
+      "projectUniqueName": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
       "projectName": "BerAuto_API",
-      "projectPath": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
-      "packagesPath": "C:\\Users\\fgeri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\obj\\",
+      "projectPath": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
+      "packagesPath": "C:\\Users\\bojsz\\.nuget\\packages\\",
+      "outputPath": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\fgeri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bojsz\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5343,14 +5343,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj": {
-              "projectPath": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj"
+            "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj": {
+              "projectPath": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj"
             }
           }
         }
@@ -5363,9 +5364,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
+        "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -5455,8 +5456,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
