@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\BerAuto_API.csproj": {}
+    "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\BerAuto_API.csproj": {}
   },
   "projects": {
-    "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\BerAuto_API.csproj": {
+    "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\BerAuto_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
+        "projectUniqueName": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
         "projectName": "BerAuto_API",
-        "projectPath": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
-        "packagesPath": "C:\\Users\\bojsz\\.nuget\\packages\\",
-        "outputPath": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_API\\obj\\",
+        "projectPath": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
+        "packagesPath": "C:\\Users\\fgeri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\bojsz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fgeri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,15 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj": {
-                "projectPath": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj"
+              "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj": {
+                "projectPath": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj"
               }
             }
           }
@@ -47,14 +46,18 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "Mapster": {
               "target": "Package",
               "version": "[7.4.0, )"
@@ -62,10 +65,6 @@
             "Mapster.DependencyInjection": {
               "target": "Package",
               "version": "[1.0.1, )"
-            },
-            "BCrypt.Net-Next": {
-              "version": "[4.0.3, )"
-              "target": "Package",
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -139,24 +138,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj": {
+    "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj",
+        "projectUniqueName": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj",
         "projectName": "BerAuto_Lib",
-        "projectPath": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj",
-        "packagesPath": "C:\\Users\\bojsz\\.nuget\\packages\\",
-        "outputPath": "C:\\ADATOK\\ProgProjects\\BerAuto\\BerAuto_Lib\\obj\\",
+        "projectPath": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj",
+        "packagesPath": "C:\\Users\\fgeri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fgeri\\Desktop\\BerAuto\\BerAuto_Lib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\bojsz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fgeri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -165,7 +164,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -182,9 +180,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -211,7 +209,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

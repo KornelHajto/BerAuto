@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 using BerAuto.DTO;
 using BerAuto.Enums;
 using BerAuto.Models;
+using BerAuto_API.Lib.ManagerServices.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
 namespace BerAuto.Lib.ManagerServices
 {
-    public class AuthManagerService
+    public class AuthManagerService : IAuthManagerService
     {
         private readonly API_DbContext _context;
         private readonly IConfiguration _configuration;

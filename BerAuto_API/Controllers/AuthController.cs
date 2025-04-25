@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using BerAuto.DTO;
 using BerAuto.Lib.ManagerServices;
+using BerAuto_API.Lib.Repositories.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,19 +13,28 @@ namespace BerAuto_API.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        private readonly AuthManagerService _authManager;
+        //private readonly AuthManagerService _authManager;
 
-        public AuthController(API_DbContext dbContext, IConfiguration configuration)
+        //public AuthController(API_DbContext dbContext, IConfiguration configuration)
+        //{
+        //    _authManager = new AuthManagerService(dbContext, configuration);
+        //}
+        private readonly IUnitOfWork _unitOfWork;
+        private readonly IConfiguration _configuration;
+
+        public AuthController(IUnitOfWork unitOfWork, IConfiguration configuration)
         {
-            _authManager = new AuthManagerService(dbContext, configuration);
+            _unitOfWork = unitOfWork;
+            _configuration = configuration;
         }
+
 
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterDTO registerDto)
         {
             try
             {
-                var result = await _authManager.Register(registerDto);
+                var result = await _unitOfWork.AuthRepository.Register(registerDto);
                 return Ok(new { success = true, data = result });
             }
             catch (Exception e)
@@ -38,7 +48,7 @@ namespace BerAuto_API.Controllers
         {
             try
             {
-                var result = await _authManager.Login(loginDto);
+                var result = await _unitOfWork.AuthRepository.Login(loginDto);
                 return Ok(new { success = true, data = result });
             }
             catch (Exception e)
@@ -52,7 +62,7 @@ namespace BerAuto_API.Controllers
         {
             try
             {
-                var result = await _authManager.RefreshToken(refreshTokenDto.RefreshToken);
+                var result = await _unitOfWork.AuthRepository.RefreshToken(refreshTokenDto.RefreshToken);
                 return Ok(new { success = true, data = result });
             }
             catch (Exception e)

@@ -1,10 +1,10 @@
 ﻿using BerAuto.Lib.ManagerServices;
-using BerAuto.Lib.Repositories;
+using BerAuto_API.Lib.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BerAuto_API.Controllers
 {
-	[Route("/api/[controller]")]
+    [Route("/api/[controller]")]
 	[ApiController]
 	public class CarController(IUnitOfWork unitofwork) : Controller
     {
