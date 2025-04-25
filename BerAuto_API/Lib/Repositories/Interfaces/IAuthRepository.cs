@@ -1,8 +1,9 @@
-﻿namespace BerAuto_API.Lib.Repositories.Interfaces
+namespace BerAuto_API.Lib.Repositories.Interfaces
 {
     public interface IAuthRepository
     {
-        Task<User?> GetByUsernameAsync(string username);
-        Task<bool> RegisterAsync(User user);
+        Task<AuthResponseDTO> Register(RegisterDTO registerDto);
+        Task<AuthResponseDTO> Login(LoginDTO loginDto);
+        Task<AuthResponseDTO> RefreshToken(string refreshToken);
     }
 }

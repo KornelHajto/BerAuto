@@ -13,9 +13,9 @@ services:
     environment:
     - MSSQL_SA_PASSWORD=P@ssw0rd
     - ACCEPT_EULA=Y
-    - MSSQL_DB=BerAutoDatabase
+    - MSSQL_DB=BerAutoDatabase2
     volumes:
-    - ./BerAuto_API/Database:/var/opt/mssql/data
+    - ./BerAuto_API/Database2:/var/opt/mssql/data
     ports:
     - 1433:1433
 

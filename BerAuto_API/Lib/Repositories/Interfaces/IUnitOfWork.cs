@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading.Tasks;
 using BerAuto.Models;
 
@@ -10,5 +10,6 @@ namespace BerAuto_API.Lib.Repositories.Interfaces
         ICategoryRepository categoryRepository { get; }
         ICarRepository carRepository { get; }
         IAuthRepository AuthRepository { get; }
+
     }
 }

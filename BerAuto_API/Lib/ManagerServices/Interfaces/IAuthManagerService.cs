@@ -1,9 +1,9 @@
-﻿namespace BerAuto.Lib.ManagerServices
+namespace BerAuto_API.Lib.ManagerServices.Interfaces
 {
     public interface IAuthManagerService
     {
-        Task<string> Login(LoginDTO loginDto);
-        Task<bool> Register(RegisterDTO registerDto);
-        Task<string> RefreshToken(string refreshToken);
+        Task<AuthResponseDTO> Register(RegisterDTO registerDto);
+        Task<AuthResponseDTO> Login(LoginDTO loginDto);
+        Task<AuthResponseDTO> RefreshToken(string refreshToken);
     }
 }

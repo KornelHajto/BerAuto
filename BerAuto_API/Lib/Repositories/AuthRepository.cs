@@ -1,26 +1,36 @@
-﻿using BerAuto_API.Lib.Repositories.Interfaces;
-using Microsoft.Extensions.DependencyInjection;
+using BerAuto_API.Lib.ManagerServices.Interfaces;
+using BerAuto_API.Lib.Repositories.Interfaces;
 
 namespace BerAuto_API.Lib.Repositories
 {
     public class AuthRepository : IAuthRepository
     {
-        private readonly API_DbContext _context;
+        private readonly IServiceScopeFactory _scopeFactory;
 
         public AuthRepository(IServiceScopeFactory scopeFactory)
         {
-            _context = scopeFactory.CreateScope().ServiceProvider.GetRequiredService<API_DbContext>();
+            _scopeFactory = scopeFactory;
         }
 
-        public async Task<User?> GetByUsernameAsync(string username)
+        public async Task<AuthResponseDTO> Register(RegisterDTO registerDto)
         {
-            return await _context.Users.FirstOrDefaultAsync(u => u.Name == username);
+            using var scope = _scopeFactory.CreateScope();
+            var service = scope.ServiceProvider.GetRequiredService<IAuthManagerService>();
+            return await service.Register(registerDto);
         }
 
-        public async Task<bool> RegisterAsync(User user)
+        public async Task<AuthResponseDTO> Login(LoginDTO loginDto)
         {
-            _context.Users.Add(user);
-            return await _context.SaveChangesAsync() > 0;
+            using var scope = _scopeFactory.CreateScope();
+            var service = scope.ServiceProvider.GetRequiredService<IAuthManagerService>();
+            return await service.Login(loginDto);
+        }
+
+        public async Task<AuthResponseDTO> RefreshToken(string refreshToken)
+        {
+            using var scope = _scopeFactory.CreateScope();
+            var service = scope.ServiceProvider.GetRequiredService<IAuthManagerService>();
+            return await service.RefreshToken(refreshToken);
         }
     }
 }
