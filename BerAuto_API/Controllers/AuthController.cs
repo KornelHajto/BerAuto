@@ -13,8 +13,6 @@ namespace BerAuto_API.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        //private readonly AuthManagerService _authManager;
-
         private readonly IUnitOfWork _unitOfWork;
         private readonly IConfiguration _configuration;
 
@@ -22,7 +20,8 @@ namespace BerAuto_API.Controllers
         {
             _unitOfWork = unitOfWork;
             _configuration = configuration;
-        }
+
+        } 
 
 
         [HttpPost("register")]

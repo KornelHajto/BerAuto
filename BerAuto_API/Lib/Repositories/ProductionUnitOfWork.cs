@@ -4,6 +4,9 @@ using BerAuto.Models;
 using BerAuto_API.Lib.Repositories;
 using BerAuto_API.Lib.Repositories.Interfaces;
 using BerAuto_API.Lib.Repositories;
+using Microsoft.Extensions.DependencyInjection;
+using BerAuto_API.Lib.Repositories;
+
 
 namespace BerAuto.Lib.Repositories
 {
@@ -22,7 +25,6 @@ namespace BerAuto.Lib.Repositories
 			carRepository = new CarRepository(scopeFactory);
             AuthRepository = new AuthRepository(scopeFactory);
         }
-
 
     }
 }

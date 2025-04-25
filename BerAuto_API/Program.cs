@@ -7,6 +7,7 @@ using Scalar.AspNetCore;
 using System.Reflection;
 using BerAuto.Lib.ManagerServices;
 using BerAuto_API.Lib.ManagerServices.Interfaces;
+using BerAuto.Lib.Repositories;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,13 +18,6 @@ builder.Services.AddScoped<IAuthManagerService, AuthManagerService>();
 // Add Mapster
 builder.Services.AddMapster(); 
 TypeAdapterConfig.GlobalSettings.Scan(Assembly.GetExecutingAssembly());
-
-
-//builder.Services.AddScoped<IAuthManagerService, AuthManagerService>();
-builder.Services.AddScoped<IAuthRepository, AuthRepository>();
-builder.Services.AddScoped<IUnitOfWork, ProductionUnitOfWork>();
-
-
 
 // Add services to the container.
 

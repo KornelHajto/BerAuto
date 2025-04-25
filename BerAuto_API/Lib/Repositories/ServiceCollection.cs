@@ -13,6 +13,8 @@ namespace BerAuto_API.Lib.Repositories
 			services.AddScoped<ICategoryManagerService,CategoryManagerService>();
 			services.AddScoped<IRentalManagerService, RentalManagerService>();
 			services.AddScoped<IUnitOfWork, ProductionUnitOfWork>();
+			services.AddScoped<IAuthManagerService, AuthManagerService>();
+
 		}
 	}
 }
