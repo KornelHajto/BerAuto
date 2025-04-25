@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using BerAuto.DTO;
@@ -13,20 +13,13 @@ namespace BerAuto_API.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        //private readonly AuthManagerService _authManager;
-
-        //public AuthController(API_DbContext dbContext, IConfiguration configuration)
-        //{
-        //    _authManager = new AuthManagerService(dbContext, configuration);
-        //}
         private readonly IUnitOfWork _unitOfWork;
         private readonly IConfiguration _configuration;
-
         public AuthController(IUnitOfWork unitOfWork, IConfiguration configuration)
         {
             _unitOfWork = unitOfWork;
             _configuration = configuration;
-        }
+        } 
 
 
         [HttpPost("register")]

@@ -1,4 +1,4 @@
-﻿namespace BerAuto_API.Lib.ManagerServices.Interfaces
+namespace BerAuto_API.Lib.ManagerServices.Interfaces
 {
     public interface IAuthManagerService
     {

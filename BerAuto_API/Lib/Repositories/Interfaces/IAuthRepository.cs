@@ -1,4 +1,4 @@
-﻿namespace BerAuto_API.Lib.Repositories.Interfaces
+namespace BerAuto_API.Lib.Repositories.Interfaces
 {
     public interface IAuthRepository
     {

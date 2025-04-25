@@ -1,4 +1,4 @@
-﻿using BerAuto_API.Lib.ManagerServices.Interfaces;
+using BerAuto_API.Lib.ManagerServices.Interfaces;
 using BerAuto_API.Lib.Repositories.Interfaces;
 
 namespace BerAuto_API.Lib.Repositories

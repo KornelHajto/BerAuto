@@ -1,8 +1,9 @@
-﻿using System.Threading.Tasks;
+using System.Threading.Tasks;
 using BerAuto.Lib.Database;
 using BerAuto.Models;
-using BerAuto_API.Lib.Repositories.Interfaces;
 using BerAuto_API.Lib.Repositories;
+using BerAuto_API.Lib.Repositories.Interfaces;
+
 
 namespace BerAuto.Lib.Repositories
 {
@@ -21,7 +22,6 @@ namespace BerAuto.Lib.Repositories
 			carRepository = new CarRepository(scopeFactory);
             AuthRepository = new AuthRepository(scopeFactory);
         }
-
 
     }
 }
