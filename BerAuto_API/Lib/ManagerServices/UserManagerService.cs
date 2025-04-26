@@ -1,5 +1,6 @@
 ﻿using BerAuto_API.Lib.ManagerServices.Interfaces;
 using BerAuto_Lib.DTO;
+using Mapster;
 using Newtonsoft.Json;
 
 namespace BerAuto_API.Lib.ManagerServices
