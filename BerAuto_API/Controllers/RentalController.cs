@@ -1,6 +1,7 @@
 ﻿using BerAuto.Lib.ManagerServices;
 using BerAuto.Models;
 using BerAuto_API.Lib.Repositories.Interfaces;
+using BerAuto_Lib.DTO;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
 
@@ -49,15 +50,15 @@ namespace BerAuto_API.Controllers
 
         // kölcsönzés létrehozása
         [HttpPost]
-        public async Task<IActionResult> CreateRental([FromBody] Rent rental)
+        public async Task<IActionResult> CreateRental([FromBody] NewRentDTO newRent)
         {
-            if (rental == null) return BadRequest("Invalid rental data.");
+            if (newRent == null) return BadRequest("Invalid rental data.");
 
             ApiResponse response = new ApiResponse();
             try
             {
-                var rentalId = await _unitOfWork.rentalRepository.CreateRental(rental);
-				return CreatedAtAction(nameof(ListRentals), new { id = rentalId }, rental);
+                var rentalId = await _unitOfWork.rentalRepository.CreateRental(newRent);
+				return CreatedAtAction(nameof(ListRentals), new { id = rentalId }, newRent);
             }
             catch (Exception e)
             {

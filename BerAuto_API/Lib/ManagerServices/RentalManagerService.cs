@@ -1,6 +1,7 @@
 ﻿using BerAuto.DTO;
 using BerAuto.Models;
 using BerAuto_API.Lib.ManagerServices.Interfaces;
+using BerAuto_Lib.DTO;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Distributed;
 using Newtonsoft.Json;
@@ -11,7 +12,7 @@ namespace BerAuto.Lib.ManagerServices
     {
         private readonly API_DbContext _dbContext;
         private readonly IDistributedCache _cache;
-        private readonly CarManagerService _carManager;
+        private readonly CarManagerService _carManager; //switch for servicefactory
 
         public RentalManagerService(API_DbContext dbContext, IDistributedCache cache)
         {
@@ -50,17 +51,42 @@ namespace BerAuto.Lib.ManagerServices
             return null;
         }
 
-        public async Task<Guid> CreateRental(Rent rental)
+        public async Task<Guid> CreateRental(NewRentDTO newRent)
         {
-            rental.ApplicationTime = DateTime.Now;
-            rental.Status = ERentStatus.Request;
-            _dbContext.Rents.Add(rental);
-            await _dbContext.SaveChangesAsync();
-            await _cache.RemoveAsync("rentals");
-            return rental.ID;
-        }
+            Rent rent = new Rent();
+			rent.ID = Guid.NewGuid();
+			rent.RenterID = Guid.Parse(newRent.RenterID);
+			rent.ApplicationTime = DateTime.Now;
+			rent.Status = ERentStatus.Request;
+			rent.Owed = newRent.Owed;
+            Guid id = await AddRent(rent);
+            return id;
 
-        public async Task<Guid> CreateRentalWithDetails(Guid renterId, Guid carId, DateTime startDate, DateTime endDate)
+		}
+
+		private async Task<Guid> AddRent(Rent rent)
+		{
+			var transaction = await _dbContext.Database.BeginTransactionAsync();
+			try
+			{
+				await _dbContext.Rents.AddAsync(rent);
+				await _dbContext.SaveChangesAsync();
+				await transaction.CommitAsync();
+				await _cache.RemoveAsync("rentals");
+				return rent.ID;
+			}
+			catch (Exception ex)
+			{
+				await transaction.RollbackAsync();
+				throw new Exception("Error creating rental: " + ex.Message);
+			}
+			finally
+			{
+				await transaction.DisposeAsync();
+			}
+		}
+
+		public async Task<Guid> CreateRentalWithDetails(Guid renterId, Guid carId, DateTime startDate, DateTime endDate)
         {
             var isAvailable = await _carManager.IsAvailableOnDayInterval(carId.ToString(), startDate, endDate);
             if (!isAvailable)
@@ -83,25 +109,45 @@ namespace BerAuto.Lib.ManagerServices
                 EndDate = endDate
             };
 
-            var car = await _dbContext.Cars
-                .Include(c => c.Category)
-                .FirstOrDefaultAsync(c => c.ID == carId);
+			var car = await _dbContext.Cars
+				.Include(c => c.Category)
+				.FirstOrDefaultAsync(c => c.ID == carId);
 
-            if (car != null)
-            {
-                int days = Math.Max(1, (int)(endDate - startDate).TotalDays);
-                rental.Owed = days * car.Category.DailyRate;
-            }
+			if (car != null)
+			{
+				int days = Math.Max(1, (int)(endDate - startDate).TotalDays);
+				rental.Owed = days * car.Category.DailyRate;
+			}
 
-            await _dbContext.Rents.AddAsync(rental);
-            await _dbContext.CarRents.AddAsync(carRental);
-            await _dbContext.SaveChangesAsync();
-            await _cache.RemoveAsync("rentals");
+			Guid rentalId = await AddDetailedRent(rental, carRental);
 
-            return rental.ID;
+            return rentalId;
         }
 
-        public async Task<RentViewDTO> UpdateRentalStatus(string ID, ERentStatus newStatus)
+		private async Task<Guid> AddDetailedRent(Rent rental, CarRent carRental)
+		{
+			var transaction = await _dbContext.Database.BeginTransactionAsync();
+			try
+			{
+				await _dbContext.Rents.AddAsync(rental);
+				await _dbContext.CarRents.AddAsync(carRental);
+				await _dbContext.SaveChangesAsync();
+				await transaction.CommitAsync();
+				await _cache.RemoveAsync("rentals");
+				return rental.ID;
+			}
+			catch (Exception ex)
+			{
+				await transaction.RollbackAsync();
+				throw new Exception("Error creating detailed rental: " + ex.Message);
+			}
+			finally
+			{
+				await transaction.DisposeAsync();
+			}
+		}
+
+		public async Task<RentViewDTO> UpdateRentalStatus(string ID, ERentStatus newStatus)
         {
             if (!await doesRentalExist(ID)) throw new Exception("Rental does not exist");
 
@@ -250,26 +296,25 @@ namespace BerAuto.Lib.ManagerServices
 
         private async Task UpdateRental(Rent rental)
         {
-            _dbContext.Update(rental);
-            await _dbContext.SaveChangesAsync();
-            await _cache.RemoveAsync("rentals");
-        }
+            var transaction = await _dbContext.Database.BeginTransactionAsync();
+			try
+			{
+				_dbContext.Rents.Update(rental);
+				await _dbContext.SaveChangesAsync();
+				await transaction.CommitAsync();
+				await _cache.RemoveAsync("rentals");
+			}
+			catch (Exception ex)
+			{
+				await transaction.RollbackAsync();
+				throw new Exception("Error updating rental: " + ex.Message);
+			}
+			finally
+			{
+				await transaction.DisposeAsync();
+			}
+		}
 
-        //private async Task<RentViewDTO> convertRentToRentViewDTO(Guid ID)
-        //{
-        //    var rent = await GetRental(ID.ToString());
-        //    var user = await _dbContext.Users.FindAsync(rent.RenterID);
-
-        //    return new RentViewDTO
-        //    {
-        //        ID = rent.ID,
-        //        RenterID = rent.RenterID,
-        //        RenterName = user?.Name ?? "Unknown",
-        //        Status = rent.Status,
-        //        ApplicationTime = rent.ApplicationTime,
-        //        Owed = rent.Owed
-        //    };
-        //}
         private async Task<RentViewDTO> convertRentToRentViewDTO(Guid ID)
         {
             var rent = await GetRental(ID.ToString());

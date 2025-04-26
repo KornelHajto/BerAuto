@@ -1,0 +1,15 @@
+﻿
+using BerAuto_Lib.DTO;
+
+namespace BerAuto_API.Lib.Repositories.Interfaces
+{
+	public interface IUserRepository
+	{
+		Task<string?> AddUserData(UserDataDTO userData);
+		Task<string?> DeleteUser(string userId);
+		Task<UserViewDTO> GetUser(string userId);
+		Task<IEnumerable<UserViewDTO>> ListUsers();
+		Task<IEnumerable<UserViewDTO>> Search(string searchTerm);
+		Task<string?> UpdateUser(UserUpdateDTO userUpdate);
+	}
+}
