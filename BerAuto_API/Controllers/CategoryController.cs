@@ -46,18 +46,18 @@ namespace BerAuto_API.Controllers
 			return BadRequest(response);
 		}
 		
-
-        [HttpPost]
-        public async Task<IActionResult> CreateCategory([FromBody] string name, int dailyRate)
-        {
-			if (name == null) return BadRequest("Invalid category data.");
+		[HttpPost]
+		public async Task<IActionResult> CreateCategory([FromBody] CategoryCreateDTO categoryDto)
+		{
+			if (categoryDto == null || string.IsNullOrEmpty(categoryDto.Name)) 
+				return BadRequest("Invalid category data.");
 
 			ApiResponse response = new ApiResponse();
-            try
-            {
+			try
+			{
 				Category c = new Category();
-				c.Name = name;
-				c.DailyRate = dailyRate;
+				c.Name = categoryDto.Name;
+				c.DailyRate = categoryDto.DailyRate;
 				await _unitOfWork.categoryRepository.CreateCategory(c);
 				return CreatedAtAction(nameof(ListCategories), new { id = c.ID }, c);
 			}
@@ -68,7 +68,7 @@ namespace BerAuto_API.Controllers
 			}
 			return BadRequest(response);
 		}
-
+		
 		[HttpPut("name")]
 		public async Task<IActionResult> UpdateCategoryName([FromBody] string id, string NewName) {
 			if (id == null || NewName == null) return BadRequest("Invalid category data.");
