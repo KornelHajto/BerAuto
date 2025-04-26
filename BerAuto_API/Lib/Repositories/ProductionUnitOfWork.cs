@@ -13,15 +13,17 @@ namespace BerAuto.Lib.Repositories
 		public ICategoryRepository categoryRepository { get;}
 		public ICarRepository carRepository { get; }
         public IAuthRepository AuthRepository { get; }
+		public IUserRepository userRepository { get; }
 
 
-        public ProductionUnitOfWork(IServiceScopeFactory scopeFactory)
+		public ProductionUnitOfWork(IServiceScopeFactory scopeFactory)
 		{
 			rentalRepository = new RentalRepository(scopeFactory);
 			categoryRepository = new CategoryRepository(scopeFactory);
 			carRepository = new CarRepository(scopeFactory);
             AuthRepository = new AuthRepository(scopeFactory);
-        }
+			userRepository = new UserRepository(scopeFactory);
+		}
 
     }
 }

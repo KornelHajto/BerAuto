@@ -18,12 +18,14 @@ namespace BerAuto.Lib.ManagerServices
     {
         private readonly API_DbContext _context;
         private readonly IConfiguration _configuration;
+		private readonly IDistributedCache _cache;
 
-        public AuthManagerService(API_DbContext context, IConfiguration configuration)
+		public AuthManagerService(API_DbContext context, IConfiguration configuration, IDistributedCache cache)
         {
             _context = context;
             _configuration = configuration;
-        }
+			_cache = cache;
+		}
 
         public async Task<AuthResponseDTO> Login(LoginDTO loginDto)
         {
@@ -54,15 +56,37 @@ namespace BerAuto.Lib.ManagerServices
                 Enabled = true
             };
 
-            _context.Users.Add(user);
-            await _context.SaveChangesAsync();
+            await CreateUser(user);
 
             return await GenerateTokensForUser(user);
         }
 
-        public async Task<AuthResponseDTO> RefreshToken(string token)
+		private async Task CreateUser(User user)
+		{
+			var transaction = await _context.Database.BeginTransactionAsync();
+			try
+			{
+				await _context.Users.AddAsync(user);
+				await _context.SaveChangesAsync();
+                await _cache.RemoveAsync("users");
+				await transaction.CommitAsync();
+			}
+			catch (Exception ex)
+			{
+				await transaction.RollbackAsync();
+				throw new Exception("Error creating user: " + ex.Message);
+			}
+			finally
+			{
+				await transaction.DisposeAsync();
+			}
+		}
+
+		public async Task<AuthResponseDTO> RefreshToken(string token)
         {
-            var user = await _context.Users
+            var transaction = await _context.Database.BeginTransactionAsync();
+
+			var user = await _context.Users
                 .FirstOrDefaultAsync(u => u.RefreshToken == token && u.RefreshTokenExpires > DateTime.UtcNow && u.Enabled);
 
             if (user == null)

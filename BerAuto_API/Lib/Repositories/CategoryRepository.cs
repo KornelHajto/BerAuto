@@ -17,7 +17,7 @@ namespace BerAuto_API.Lib.Repositories
             var scope = ScopeFactory.CreateScope();
             var categoryManager = scope.ServiceProvider.GetRequiredService<ICategoryManagerService>();
             await categoryManager.CreateCategory(c);
-        }
+		}
 
         public async Task<object?> GetCategory(string iD)
         {

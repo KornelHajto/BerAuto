@@ -54,18 +54,53 @@ namespace BerAuto.Lib.ManagerServices
 
 		public async Task CreateCar(Car car)
 		{
-			car.Description = $"{DateTime.Now.ToString()} : {car.Description}";
-			_dbContext.Cars.Add(car);
-			await _dbContext.SaveChangesAsync();
-			await _cache.RemoveAsync("cars");
+			var transaction = await _dbContext.Database.BeginTransactionAsync();
+			try
+			{
+				car.Description = $"{DateTime.Now.ToString()} : {car.Description}";
+				_dbContext.Cars.Add(car);
+				await _dbContext.SaveChangesAsync();
+				await _cache.RemoveAsync("cars");
+				await transaction.CommitAsync();
+			}
+			catch (Exception ex)
+			{
+				await transaction.RollbackAsync();
+				throw new Exception("Error creating car: " + ex.Message);
+			}
+			finally
+			{
+				await transaction.DisposeAsync();
+			}
 		}
 
 		public async Task DeleteCar(string ID)
 		{
-			var car = await GetCar(ID);
-			_dbContext.Cars.Remove(car);
-			await _dbContext.SaveChangesAsync();
-			await _cache.RemoveAsync("cars");
+			var transaction = await _dbContext.Database.BeginTransactionAsync();
+			try
+			{
+				var car = await GetCar(ID);
+				if (car != null)
+				{
+					_dbContext.Cars.Remove(car);
+					await _dbContext.SaveChangesAsync();
+					await _cache.RemoveAsync("cars");
+					await transaction.CommitAsync();
+				}
+				else
+				{
+					throw new Exception("Car not found");
+				}
+			}
+			catch (Exception ex)
+			{
+				await transaction.RollbackAsync();
+				throw new Exception("Error deleting car: " + ex.Message);
+			}
+			finally
+			{
+				await transaction.DisposeAsync();
+			}
 		}
 
 		public async Task<CarViewDTO> UpdateCarCategory(string carId, string categoryId)
@@ -181,35 +216,14 @@ namespace BerAuto.Lib.ManagerServices
 			return _dbContext.Cars.OrderBy(c => c.ID).Include(c => c.Category);
 		}
 
-        //private async Task<IEnumerable<CarViewDTO>> convertListToDTO(IQueryable<Car> cars)
-        //{
-        //	foreach (var car in cars)
-        //	{
-        //		car.Category = await categoryManager.GetCategory(car.CategoryId.ToString());
-        //	}
-        //	IEnumerable<CarViewDTO> response = cars.Include(c => c.Category).Select(c => new CarViewDTO
-        //	{
-        //		ID = c.ID,
-        //		PlateNumber = c.PlateNumber,
-        //		Type = c.Type,
-        //		Odometer = c.Odometer,
-        //		Available = c.Available,
-        //		Description = c.Description,
-        //		CategoryName = c.Category.Name,
-        //		DailyRate = c.Category.DailyRate
-        //	}).ToList(); // NE ÍGY ehelyett a fenti
-        //	return response;
-        //}
 		private async Task<IEnumerable<CarViewDTO>> convertListToDTO(IQueryable<Car> cars)
         {
             foreach (var car in cars)
             {
-                //car.Category = await categoryManager.GetCategory(car.CategoryId.ToString());
                 car.Category = await categoryManager.GetCategoryEntity(car.CategoryId.ToString());
 
             }
-
-            return cars.Adapt<List<CarViewDTO>>(); // Mapster automatikusan konvertál
+            return cars.Adapt<List<CarViewDTO>>(); 
         }
 
         private async Task<bool> doesCarExists(string ID)
@@ -231,34 +245,29 @@ namespace BerAuto.Lib.ManagerServices
 
 		private async Task UpdateCar(Car car)
 		{
-			_dbContext.Update(car);
-			await _dbContext.SaveChangesAsync();
-			await _cache.RemoveAsync("cars");
+			var transaction = await _dbContext.Database.BeginTransactionAsync();
+			try
+			{
+				_dbContext.Cars.Update(car);
+				await _dbContext.SaveChangesAsync();
+				await _cache.RemoveAsync("cars");
+				await transaction.CommitAsync();
+			}
+			catch (Exception ex)
+			{
+				await transaction.RollbackAsync();
+				throw new Exception("Error updating car: " + ex.Message);
+			}
+			finally
+			{
+				await transaction.DisposeAsync();
+			}
 		}
         private async Task<CarViewDTO> convertCarToCarViewDTO(Guid ID)
         {
             var car = await GetCar(ID.ToString());
-            //car.Category = await categoryManager.GetCategory(car.CategoryId.ToString());
             car.Category = await categoryManager.GetCategoryEntity(car.CategoryId.ToString());
-
             return car.Adapt<CarViewDTO>(); 
         }
-
-		//private async Task<CarViewDTO> convertCarToCarViewDTO(Guid ID) { // Ilyen nevű metódusok 
-		//  //var dto = mapper.Map<CarResponseDTO>(car);
-		//  var car = await GetCar(ID.ToString());
-		//	var category = await categoryManager.GetCategory(car.CategoryId.ToString());
-		//	return new CarViewDTO
-		//	{
-		//		ID = car.ID,
-		//		PlateNumber = car.PlateNumber,
-		//		Type = car.Type,
-		//		Odometer = car.Odometer,
-		//		Available = car.Available,
-		//		Description = car.Description,
-		//		CategoryName = category.Name,
-		//		DailyRate = category.DailyRate
-		//	};
-		//}
 	}
 }

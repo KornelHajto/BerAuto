@@ -2,6 +2,7 @@
 using BerAuto.Lib.ManagerServices;
 using BerAuto_API.Lib.ManagerServices.Interfaces;
 using BerAuto_API.Lib.Repositories.Interfaces;
+using BerAuto_Lib.DTO;
 
 namespace BerAuto_API.Lib.Repositories
 {
@@ -13,11 +14,11 @@ namespace BerAuto_API.Lib.Repositories
             _scopeFactory = scopeFactory;
         }
 
-        public async Task<Guid> CreateRental(Rent rental)
+        public async Task<Guid> CreateRental(NewRentDTO newRent)
         {
             var scope = _scopeFactory.CreateScope();
             var rentalManager = scope.ServiceProvider.GetRequiredService<IRentalManagerService>();
-            return await rentalManager.CreateRental(rental);
+            return await rentalManager.CreateRental(newRent);
         }
 
         public async Task<Guid> CreateRentalWithDetails(Guid renterId, Guid carId, DateTime startDate, DateTime endDate)

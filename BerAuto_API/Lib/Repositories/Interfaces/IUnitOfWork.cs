@@ -10,6 +10,7 @@ namespace BerAuto_API.Lib.Repositories.Interfaces
         ICategoryRepository categoryRepository { get; }
         ICarRepository carRepository { get; }
         IAuthRepository AuthRepository { get; }
+		IUserRepository userRepository { get; }
 
-    }
+	}
 }
