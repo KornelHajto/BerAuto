@@ -2,6 +2,7 @@
 using BerAuto.Models;
 using BerAuto_API.Lib.ManagerServices.Interfaces;
 using BerAuto_Lib.DTO;
+using Mapster;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Distributed;
 using Newtonsoft.Json;

@@ -1,4 +1,5 @@
 ﻿using BerAuto_API.Lib.ManagerServices.Interfaces;
+using Mapster;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
 using Newtonsoft.Json;

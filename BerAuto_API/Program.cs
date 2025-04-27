@@ -5,6 +5,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Scalar.AspNetCore;
 using System.Reflection;
+using System.Security.Claims;
 using BerAuto.Lib.ManagerServices;
 using BerAuto_API.Lib.ManagerServices.Interfaces;
 
@@ -38,14 +39,16 @@ builder.Services.AddAuthentication(options =>
     {
         options.TokenValidationParameters = new TokenValidationParameters
         {
-            ValidateIssuer = true,
-            ValidateAudience = true,
-            ValidateLifetime = true,
+            ValidateIssuer = false,
+            ValidateAudience = false,
+            ValidateLifetime = false,
             ValidateIssuerSigningKey = true,
             ValidIssuer = builder.Configuration["JwtSettings:Issuer"],
             ValidAudience = builder.Configuration["JwtSettings:Audience"],
+            NameClaimType = ClaimTypes.Name,
+            RoleClaimType = ClaimTypes.Role,
             IssuerSigningKey = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes(builder.Configuration["JwtSettings:SecretKey"]))
+            Encoding.UTF8.GetBytes(builder.Configuration["JwtSettings:SecretKey"]))
         };
     });
 
@@ -53,18 +56,19 @@ builder.Services.AddAuthorization(options =>
 {
     // Basic role policies
     options.AddPolicy("RequireAdministrator", policy => 
-        policy.RequireRole(EUserType.Administrator.ToString()));
+        policy.RequireClaim(ClaimTypes.Role, EUserType.Administrator.ToString()));
     
     options.AddPolicy("RequireWorker", policy => 
-        policy.RequireRole(EUserType.Administrator.ToString(), EUserType.Worker.ToString()));
+        policy.RequireClaim(ClaimTypes.Role, 
+            EUserType.Administrator.ToString(), 
+            EUserType.Worker.ToString()));
     
     options.AddPolicy("RequireUser", policy => 
-        policy.RequireRole(EUserType.Administrator.ToString(), EUserType.Worker.ToString(), EUserType.User.ToString()));
-    
-    // All authenticated users
-    options.AddPolicy("RequireAuthenticated", policy => policy.RequireAuthenticatedUser());
+        policy.RequireClaim(ClaimTypes.Role, 
+            EUserType.Administrator.ToString(), 
+            EUserType.Worker.ToString(), 
+            EUserType.User.ToString()));
 });
-
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 

@@ -1,4 +1,5 @@
-﻿namespace BerAuto_API.Lib.Profiles
+﻿
+namespace BerAuto_API.Lib.Profiles
 {
     public class AuthProfile : IRegister
     {
