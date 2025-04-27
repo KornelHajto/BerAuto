@@ -1,9 +1,11 @@
 ﻿using BerAuto_API.Lib.Repositories.Interfaces;
 using BerAuto_Lib.DTO;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BerAuto_API.Controllers
 {
+	[Authorize]
 	[Route("api/[controller]")]
 	[ApiController]
 	public class UserController(IUnitOfWork unitofwork) : Controller

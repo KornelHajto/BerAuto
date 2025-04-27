@@ -2,11 +2,13 @@
 using BerAuto.Models;
 using BerAuto_API.Lib.Repositories.Interfaces;
 using BerAuto_Lib.DTO;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
 
 namespace BerAuto_API.Controllers
 {
+    [Authorize]
     [Route("/api/[controller]")]
     [ApiController]
     public class RentalController(IUnitOfWork unitofwork) : Controller

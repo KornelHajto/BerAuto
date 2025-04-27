@@ -9,17 +9,19 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BerAuto_API.Controllers
 {
+    [AllowAnonymous]
     [Route("api/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IConfiguration _configuration;
+
         public AuthController(IUnitOfWork unitOfWork, IConfiguration configuration)
         {
             _unitOfWork = unitOfWork;
             _configuration = configuration;
-        } 
+        }
 
 
         [HttpPost("register")]
@@ -35,7 +37,7 @@ namespace BerAuto_API.Controllers
                 return BadRequest(new { success = false, message = e.Message });
             }
         }
-        
+
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginDTO loginDto)
         {

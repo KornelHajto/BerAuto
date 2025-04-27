@@ -15,7 +15,7 @@ services:
     - ACCEPT_EULA=Y
     - MSSQL_DB=BerAutoDatabaseNew
     volumes:
-    - ./BerAuto_API/Database2:/var/opt/mssql/data
+    - ./BerAuto_API/DB:/var/opt/mssql/data
     ports:
     - 1433:1433
 
