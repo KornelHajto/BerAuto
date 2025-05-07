@@ -24,13 +24,10 @@
 		{
 			modelBuilder.Entity<Category>().HasKey(x => x.ID);
 			modelBuilder.Entity<Car>().HasKey(x => x.ID);
-			modelBuilder.Entity<Car>().HasOne(x => x.Category).WithMany(c => c.Cars).HasForeignKey(x => x.CategoryId);
 
 			modelBuilder.Entity<CarRent>().HasKey(x => x.ID);
-			modelBuilder.Entity<CarRent>().HasOne(x => x.Car).WithMany(c => c.CarRents).HasForeignKey(x => x.CarID);
 
 			modelBuilder.Entity<Rent>().HasKey(x => x.ID);
-			modelBuilder.Entity<Rent>().HasOne(x => x.Renter).WithMany(u => u.Rents).HasForeignKey(x => x.RenterID);
 
 			modelBuilder.Entity<Log>().HasKey(x => x.ID);
 			modelBuilder.Entity<User>().HasKey(x => x.ID);

@@ -5,22 +5,28 @@ services:
       context: .
       dockerfile: BerAuto_API/Dockerfile
     ports:
-        - "5000:5000"
-        - "5001:5001"
+      - "5000:5000"  # HTTP port
+      - "5001:5001"  # HTTPS port
+    environment:
+      ASPNETCORE_Kestrel__Certificates__Default__Password: "YourPassword123"  # Use the password you specified above
+      ASPNETCORE_Kestrel__Certificates__Default__Path: "/https/aspnetapp.pfx"  # Path inside the container
+    user: root
+    volumes:
+      - /home/alexanderh/.aspnet/https:/https:ro  # Mount the certificate from the host to the container (read-only)
   berauto.database:
-    image: mcr.microsoft.com/mssql/server  
+    image: mcr.microsoft.com/mssql/server
     container_name: berauto.database
     environment:
-    - MSSQL_SA_PASSWORD=P@ssw0rd
-    - ACCEPT_EULA=Y
-    - MSSQL_DB=BerAutoDatabaseNew
+      - MSSQL_SA_PASSWORD=P@ssw0rd
+      - ACCEPT_EULA=Y
+      - MSSQL_DB=BerAutoDatabaseNew
     volumes:
-    - ./BerAuto_API/DB:/var/opt/mssql/data
+      - ./BerAuto_API/DB:/var/opt/mssql/data
+    user: root
     ports:
-    - 1433:1433
-
+      - "1433:1433"
   berauto.cache:
     image: redis:latest
     restart: always
     ports:
-    - '6379:6379' 
+      - '6379:6379'

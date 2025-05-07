@@ -13,8 +13,6 @@ using BerAuto_API.Lib.ManagerServices.Interfaces;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<IAuthManagerService, AuthManagerService>();
-
-
 // Add Mapster
 builder.Services.AddMapster(); 
 TypeAdapterConfig.GlobalSettings.Scan(Assembly.GetExecutingAssembly());
@@ -29,6 +27,18 @@ builder.Services.AddDbContext<API_DbContext>(options =>
 
 builder.Services.AddStackExchangeRedisCache(options => 
     options.Configuration = builder.Configuration.GetConnectionString("Cache"));
+
+// Add this at the top with other builder.Services configurations
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin", policy =>
+    {
+        policy.WithOrigins("http://localhost:5173") // Your frontend URL
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+// Add this before app.Run(), typically after app.UseAuthorization()
 
 builder.Services.AddAuthentication(options =>
     {
@@ -76,7 +86,7 @@ builder.Services.AddLocalServices();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+app.UseCors("AllowSpecificOrigin");// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();

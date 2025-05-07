@@ -1,41 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\BerAuto_API.csproj": {}
+    "/home/alexanderh/_code/BerAuto/BerAuto_API/BerAuto_API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\BerAuto_API.csproj": {
+    "/home/alexanderh/_code/BerAuto/BerAuto_API/BerAuto_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
+        "projectUniqueName": "/home/alexanderh/_code/BerAuto/BerAuto_API/BerAuto_API.csproj",
         "projectName": "BerAuto_API",
-        "projectPath": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\BerAuto_API.csproj",
-        "packagesPath": "C:\\Users\\lxndr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_API\\obj\\",
+        "projectPath": "/home/alexanderh/_code/BerAuto/BerAuto_API/BerAuto_API.csproj",
+        "packagesPath": "/home/alexanderh/.nuget/packages/",
+        "outputPath": "/home/alexanderh/_code/BerAuto/BerAuto_API/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\lxndr\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/alexanderh/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.pkg.github.com/KornelHajto/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj": {
-                "projectPath": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj"
+              "/home/alexanderh/_code/BerAuto/BerAuto_Lib/BerAuto_Lib.csproj": {
+                "projectPath": "/home/alexanderh/_code/BerAuto/BerAuto_Lib/BerAuto_Lib.csproj"
               }
             }
           }
@@ -50,7 +42,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -132,6 +124,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.4, 9.0.4]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -140,35 +138,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.105/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj": {
+    "/home/alexanderh/_code/BerAuto/BerAuto_Lib/BerAuto_Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj",
+        "projectUniqueName": "/home/alexanderh/_code/BerAuto/BerAuto_Lib/BerAuto_Lib.csproj",
         "projectName": "BerAuto_Lib",
-        "projectPath": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_Lib\\BerAuto_Lib.csproj",
-        "packagesPath": "C:\\Users\\lxndr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lxndr\\Documents\\_code\\BerAuto\\BerAuto_Lib\\obj\\",
+        "projectPath": "/home/alexanderh/_code/BerAuto/BerAuto_Lib/BerAuto_Lib.csproj",
+        "packagesPath": "/home/alexanderh/.nuget/packages/",
+        "outputPath": "/home/alexanderh/_code/BerAuto/BerAuto_Lib/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\lxndr\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/alexanderh/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.pkg.github.com/KornelHajto/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
@@ -186,7 +176,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -208,12 +198,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.4, 9.0.4]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.105/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
